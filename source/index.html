@@ -3,10 +3,78 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <header class="page-header">
+      <a class="logo">
+          <img class="logo__logo-image" src="https://via.placeholder.com/150x150" width="75" height="22" alt="Приложение Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Pink для обработки фотографий</h1>
+      <section class="offer-download">
+        <h2 class="visually-hidden">Скачайте приложение Pink</h2>
+        <p class="offer-download__slogan">Взгляните на жизнь иначе!</p>
+        <img class="offer-download__image" src="https://via.placeholder.com/150x150" width="320" height="314" alt="Pink раскрасит ваши фото в розовый цвет">
+        <a class="offer-download__download-btn button" href="#">Скачать приложение</a>
+        <ul class="offer-download__icon-list">
+          <li class="offer-download__icon offer-download__icon--apple">
+            <a href="https://www.apple.com/ios/app-store/" target="blank">
+              <img src="https://via.placeholder.com/150x150" width="47" height="56" alt="App Store">
+            </a>
+          </li>
+          <li class="offer-download__icon offer-download__icon--android">
+            <a href="https://play.google.com/store" target="blank">
+              <img src="https://via.placeholder.com/150x150" width="43" height="47" alt="Google Play">
+            </a>
+          </li>
+          <li class="offer-download__icon offer-download__icon--windows">
+            <a href="https://www.microsoft.com/ru-ru/store/apps/windows" target="blank">
+              <img src="https://via.placeholder.com/150x150" width="44" height="41" alt="Windows App Store">
+            </a>
+          </li>
+        </ul>
+        <p class="offer-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="advantages__heading">Устали от серости мегаполиса?</p>
+        <p class="advantages__heading">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="advantages__image" src="https://via.placeholder.com/150x150" width="157" height="320" alt="Всем привет!">
+      </section>
+    </main>
   </body>
 </html>
