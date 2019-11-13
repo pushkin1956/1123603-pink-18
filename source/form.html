@@ -31,6 +31,84 @@
 
     <main class="page-main">
       <h1 class="page-main__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="form">
+        <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
+        <p class="form__heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="form__contest-form contest-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="contest-form__item contest-form__item--surname">
+            <label for="surname-field">Фамилия</label>
+            <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
+          </div>
+          <div class="contest-form__item contest-form__item--name">
+            <label for="surname-field">Имя</label>
+            <input type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
+          </div>
+          <div class="contest-form__item contest-form__item--patronym">
+            <label for="patronym-field">Отчество</label>
+            <input type="text" name="patronym" id="patronym-field" placeholder="Ну и отчество тоже">
+          </div>
+          <fieldset class="form__fieldset contest-fieldset">
+            <legend class="contest-fieldset__title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="contest-fieldset__list">
+              <li class="contest-fieldset__item">
+                <input class="visually-hidden" type="checkbox" id="selfie" name="selfie" checked>
+                <label for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="contest-fieldset__item">
+                <input class="visually-hidden" type="checkbox" id="sunburned" name="sunburned" checked>
+                <label for="sunburned">Обгорел на пляже</label>
+              </li>
+              <li class="contest-fieldset__item">
+                <input class="visually-hidden" type="checkbox" id="chuck-norris" name="chuck-norris">
+                <label for="chuck-norris">Видел Чака Норриса</label>
+              </li>
+              <li class="contest-fieldset__item">
+                <input class="visually-hidden" type="checkbox" id="souvenir" name="souvenir">
+                <label for="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="contest-fieldset__item">
+                <input class="visually-hidden" type="checkbox" id="tower" name="tower" checked>
+                <label for="tower">Удержал башню</label>
+              </li>
+              <li class="contest-fieldset__item">
+                <input class="visually-hidden" type="checkbox" id="hotel" name="hotel" checked>
+                <label for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="contest-form__item contest-form__item--phone">
+            <label for="phone-field">Номер телефона</label>
+            <input type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="contest-form__item contest-form__item--email">
+            <label for="email-field">Адрес почты</label>
+            <input type="email" name="email" id="email-field" placeholder="Введите почту *" required>
+          </div>
+          <fieldset class="form__fieldset contest-fieldset">
+            <legend class="contest-fieldset__title">С каким приложением путешествовали?</legend>
+            <ul class="contest-fieldset__list">
+              <li class="contest-fieldset__item">
+                <input class="visually-hidden" type="radio" id="ios" name="application" value="pink-ios" checked>
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li class="contest-fieldset__item">
+                <input class="visually-hidden" type="radio" id="android" name="application" value="pink-android" checked>
+                <label for="android">Pink на Android</label>
+              </li>
+              <li class="contest-fieldset__item">
+                <input class="visually-hidden" type="radio" id="windows" name="application" value="windows-phone" checked>
+                <label for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <label for="emotions-field">Опишите свои эмоции</label>
+          <textarea  name="emotions-description" id="emotions-field" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <button class="form__btn form__btn--submit button" type="submit">Отправить форму</button>
+        </form>
+        <small class="form__note">
+          <sup>*</sup> — обязательные поля
+        </small>
+      </section>
     </main>
 
     <footer class="page-footer">
