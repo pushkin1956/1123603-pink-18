@@ -1,12 +1,15 @@
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 .page-main {
-  font-family: 'OpenSans Regular', sans-serif;
+  font-family: "OpenSans Regular", sans-serif;
 }
+
 .page-main__heading {
-  font-family: 'OpenSans Light';
+  font-family: "OpenSans Light", sans-serif;
   margin: 0;
   font-size: 24px;
   text-align: center;
