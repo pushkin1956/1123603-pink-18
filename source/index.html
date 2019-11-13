@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="logo">
-          <img class="logo__logo-image" src="https://via.placeholder.com/150x150" width="75" height="22" alt="Приложение Pink">
+          <img class="logo__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -31,25 +31,25 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Pink для обработки фотографий</h1>
-      <section class="offer-download">
+      <section class="offer-download main-background">
         <h2 class="visually-hidden">Скачайте приложение Pink</h2>
-        <p class="offer-download__slogan">Взгляните на жизнь иначе!</p>
-        <img class="offer-download__image" src="https://via.placeholder.com/150x150" width="320" height="314" alt="Pink раскрасит ваши фото в розовый цвет">
+        <p class=" page-main__heading offer-download__slogan">Взгляните на жизнь иначе!</p>
+        <img class="offer-download__image" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Pink раскрасит ваши фото в розовый цвет">
         <a class="offer-download__download-btn button" href="#">Скачать приложение</a>
         <ul class="offer-download__icon-list">
-          <li class="offer-download__icon offer-download__icon--apple">
+          <li>
             <a href="https://www.apple.com/ios/app-store/" target="blank">
-              <img src="https://via.placeholder.com/150x150" width="47" height="56" alt="App Store">
+              <div class="offer-download__icon offer-download__icon--apple"><span class="visually-hidden">Скачать в App Store</span></div>
             </a>
           </li>
-          <li class="offer-download__icon offer-download__icon--android">
+          <li>
             <a href="https://play.google.com/store" target="blank">
-              <img src="https://via.placeholder.com/150x150" width="43" height="47" alt="Google Play">
+              <div class="offer-download__icon offer-download__icon--android"><span class="visually-hidden">Скачать в Google Play</span></div>
             </a>
           </li>
-          <li class="offer-download__icon offer-download__icon--windows">
+          <li>
             <a href="https://www.microsoft.com/ru-ru/store/apps/windows" target="blank">
-              <img src="https://via.placeholder.com/150x150" width="44" height="41" alt="Windows App Store">
+              <div class="offer-download__icon offer-download__icon--windows"><span class="visually-hidden">Скачать в Windows App Store</span></div>
             </a>
           </li>
         </ul>
@@ -59,21 +59,23 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <p class="advantages__heading">Устали от серости мегаполиса?</p>
         <p class="advantages__heading">Нам есть, что вам предложить!</p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <img class="advantages__image" src="https://via.placeholder.com/150x150" width="157" height="320" alt="Всем привет!">
+        <div class="advantages__background">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
+        </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
