@@ -1,0 +1,21 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.page-main {
+  font-family: 'OpenSans Regular', sans-serif;
+}
+.page-main__heading {
+  font-family: 'OpenSans Light';
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  color: $white;
+}
+
+.page-main__description {
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  color: $main-color;
+}
