@@ -1,7 +1,5 @@
 .photo-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 }
 
 .photo-list__item {
@@ -12,4 +10,8 @@
 
 .photo-list__item--view-of-day {
   margin: 0;
+}
+
+.photo-list__item img {
+  display: block;
 }

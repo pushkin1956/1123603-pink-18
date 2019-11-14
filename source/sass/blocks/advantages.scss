@@ -4,30 +4,23 @@
 }
 
 .advantages__heading {
-  font-size: 24px;
-  text-align: center;
+  @include font-heading;
   color: $main-color;
 }
 
 .advantages__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 }
 
 .advantages__title {
-  font-family: "OpenSans Bold", sans-serif;
-  font-size: 18px;
+  margin: 0;
+  @include item-title-black;
   line-height: 24px;
-  text-align: center;
-  color: $black;
 }
 
 .advantages__description {
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  color: $main-color;
+  @include font-description;
+  line-height: 24px;
 }
 
 .advantages__background {

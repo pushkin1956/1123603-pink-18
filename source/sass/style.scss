@@ -1,10 +1,16 @@
+body {
+  width: 340px;
+}
+
 @import "fonts.scss";
 @import "colors.scss";
+@import "mixins.scss";
+@import "normalize.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/main-background.scss";
-@import "blocks/visually-hidden.scss";
+@import "blocks/utils.scss";
 @import "blocks/page-main.scss";
 @import "blocks/button.scss";
 @import "blocks/offer-download.scss";

@@ -4,22 +4,14 @@
 }
 
 .reviews__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 }
 
 .reviews__author-name {
-  font-family: "OpenSans Bold", sans-serif;
-  font-size: 18px;
-  line-height: 1.67;
-  text-align: center;
-  color: $black;
+  @include item-title-black;
+  line-height: 30px;
 }
 
 .reviews__text {
-  font-size: 14px;
-  line-height: 2.14;
-  text-align: center;
-  color: $main-color;
+  @include font-description;
 }
