@@ -26,6 +26,7 @@
 
 .comment__description {
   margin: 0;
+
   @include font-description;
   line-height: 24px;
   text-align: left;
