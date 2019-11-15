@@ -1,0 +1,17 @@
+.reviews {
+  padding-top: 49px;
+  font-family: "OpenSans Light", sans-serif;
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__author-name {
+  @include item-title-black;
+  line-height: 30px;
+}
+
+.reviews__text {
+  @include font-description;
+}

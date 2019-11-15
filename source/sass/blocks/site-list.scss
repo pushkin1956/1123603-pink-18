@@ -1,0 +1,8 @@
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item a {
+  color: $white;
+  text-decoration: none;
+}

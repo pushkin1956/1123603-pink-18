@@ -1,0 +1,42 @@
+.advantages {
+  padding-top: 46px;
+  font-family: "OpenSans Light", sans-serif;
+}
+
+.advantages__heading {
+  @include font-heading;
+  color: $main-color;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__title {
+  margin: 0;
+
+  @include item-title-black;
+  line-height: 24px;
+}
+
+.advantages__description {
+  @include font-description;
+  line-height: 24px;
+}
+
+.advantages__background {
+  position: relative;
+  padding-top: 130px;
+  background-color: $light-grey;
+}
+
+.advantages__background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+}
