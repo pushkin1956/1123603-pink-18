@@ -7,10 +7,9 @@
 }
 
 .offer-download__description {
-  font-family: "OpenSans Light", sans-serif;
+  @include font-light;
   font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
+  line-height: 24px;
   color: $white;
 }
 

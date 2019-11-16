@@ -5,8 +5,7 @@
   padding-bottom: 17px;
   padding-right: 40px;
   text-decoration: none;
-  font-family: "OpenSans Bold", sans-serif;
-  font-size: 18px;
+  @include font-bold;
   color: $white;
   background: none;
   border: solid 3px $white;

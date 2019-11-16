@@ -4,24 +4,25 @@
   list-style: none;
 }
 
-@mixin font-heading {
+@mixin font-light {
   margin: 0;
-  font-family: "OpenSans Light", sans-serif;
+  font-family: "OpenSans Light", "Arial", sans-serif;
   font-size: 24px;
   text-align: center;
 }
 
-@mixin font-description {
-  font-family: "OpenSans Regular", sans-serif;
+@mixin font-regular {
+  margin: 0;
+  font-family: "OpenSans Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: $main-color;
 }
 
-@mixin item-title-black {
-  font-family: "OpenSans Bold", sans-serif;
+@mixin font-bold {
+  margin: 0;
+  font-family: "OpenSans Bold", "Arial", sans-serif;
   font-size: 18px;
   text-align: center;
-  color: $black;
 }
