@@ -1,0 +1,17 @@
+.price {
+  position: relative;
+  padding-top: 147px;
+  padding-bottom: 102px;
+  background-color: $light-grey;
+}
+
+.price::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+}
