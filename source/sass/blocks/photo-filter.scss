@@ -1,0 +1,15 @@
+.photo-filter__heading {
+  @include font-regular;
+}
+
+.photo-filter__wrapper {
+  padding-top: 20px;
+  padding-bottom: 41px;
+  background-color: $light-grey;
+}
+
+.photo-filter__image {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 42px;;
+}
