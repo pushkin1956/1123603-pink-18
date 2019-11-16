@@ -1,0 +1,55 @@
+.filter-icons {
+  @include list-reset;
+}
+
+.filter-icons__item {
+  position: relative;
+}
+
+.filter-icons__item--crop::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  background-image: url("../../img/icon-editor-crop.svg");
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.filter-icons__item--fill::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  background-image: url("../../img/icon-editor-fill.svg");
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.filter-icons__item--contrast::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  background-image: url("../../img/icon-editor-contrast.svg");
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.photo-filter__btn--post {
+  margin-top: 38px;
+  margin-bottom: 12px;
+  color: $pink;
+  border-color: $pink;
+}
+
+.photo-filter__btn--cancel {
+  color: $main-light;
+  border-color: $main-light;
+}
