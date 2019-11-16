@@ -1,0 +1,11 @@
+.form__heading {
+  @include font-regular;
+}
+
+.form__note {
+  @include font-regular;
+}
+
+.form__note sup {
+  color: $pink;
+}
