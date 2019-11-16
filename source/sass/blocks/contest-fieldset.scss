@@ -1,0 +1,17 @@
+.contest-fieldset {
+  border: none;
+}
+
+.contest-fieldset__title {
+  @include font-regular;
+  line-height: 18px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.contest-fieldset__list {
+  @include list-reset;
+
+  @include font-regular;
+  text-align: left;
+}
