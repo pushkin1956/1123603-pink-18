@@ -1,0 +1,40 @@
+.contacts {
+  padding-top: 50px;
+}
+
+.contacts__heading {
+  @include font-light;
+  margin-bottom: 44px;
+}
+
+.contacts__title {
+  @include font-bold;
+  color: $main-color;
+}
+
+.contacts__detail {
+  @include font-light;
+  color: $pink;
+  text-decoration: none;
+}
+
+.contacts__container {
+  margin-bottom: 28px;
+}
+
+.contacts__wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.contacts__wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: 170px;
+  width: 600px;
+  height: 123px;
+  background-image: url("../../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
