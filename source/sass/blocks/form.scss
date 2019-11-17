@@ -4,8 +4,19 @@
 
 .form__note {
   @include font-regular;
+  text-transform: uppercase;
 }
 
 .form__note sup {
   color: $pink;
+}
+
+.form__btn {
+  width: 276px;
+  height: 59px;
+  margin-top: 52px;
+  margin-bottom: 46px;
+  line-height: 30px;
+  background-color: $green;
+  border-radius: 5px;
 }
