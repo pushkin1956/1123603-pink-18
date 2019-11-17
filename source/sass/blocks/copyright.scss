@@ -6,11 +6,16 @@
 .copyright__logo::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 0;
   width: 27px;
   height: 34px;
   background-image: url("../../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
+}
+
+.copyright__text {
+  @include font-regular;
+  line-height: 18px;
 }

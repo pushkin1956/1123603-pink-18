@@ -1,12 +1,13 @@
 .page-main {
-  font-family: "OpenSans Regular", sans-serif;
+  // font-family: "OpenSans Regular", sans-serif;
 }
 
 .page-main__heading {
-  @include font-heading;
+  @include font-light;
+  font-weight: 300;
   color: $white;
 }
 
 .page-main__description {
-  @include font-description;
+  @include font-regular;
 }

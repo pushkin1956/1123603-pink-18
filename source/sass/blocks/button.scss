@@ -1,12 +1,13 @@
 .button {
   width: 281px;
-  padding-top: 20px;
+  padding-top: 12px;
   padding-left: 39px;
-  padding-bottom: 17px;
+  padding-bottom: 12px;
   padding-right: 40px;
   text-decoration: none;
-  font-family: "OpenSans Bold", sans-serif;
-  font-size: 18px;
+
+  @include font-bold;
+  line-height: 18px;
   color: $white;
   background: none;
   border: solid 3px $white;

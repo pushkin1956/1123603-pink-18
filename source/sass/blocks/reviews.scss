@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 49px;
-  font-family: "OpenSans Light", sans-serif;
+  font-family: "OpenSans Light", "Arial", sans-serif;
 }
 
 .reviews__list {
@@ -8,10 +8,12 @@
 }
 
 .reviews__author-name {
-  @include item-title-black;
+  @include font-bold;
+  font-style: normal;
+  color: $black;
   line-height: 30px;
 }
 
 .reviews__text {
-  @include font-description;
+  @include font-regular;
 }

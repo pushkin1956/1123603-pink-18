@@ -95,9 +95,9 @@
             </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
@@ -108,70 +108,84 @@
             <li class="price-list__item price-list__item--standard price-list__item--hit slider__item">
               <table class="price-list__details">
                 <tr>
-                  <th>Стандарт<span>3,99 USD</span></th>
+                  <th class="price-list__title">Стандарт <br><span class="price-list__price">3,99 USD</span></th>
                 </tr>
-                <tr>
-                  <td>Розовый фильтр</td>
-                </tr>
-                <tr>
-                  <td>Смайлики</td>
-                </tr>
-                <tr>
-                  <td>Комментарии</td>
-                </tr>
+                <tbody class="price-list__content">
+                  <tr>
+                    <td>Розовый фильтр</td>
+                  </tr>
+                  <tr>
+                    <td>Смайлики</td>
+                  </tr>
+                  <tr>
+                    <td>Комментарии</td>
+                  </tr>
+                </tbody>
               </table>
             </li>
             <li class="price-list__item price-list__item--minimum slider__item">
               <table class="price-list__details">
                 <tr>
-                  <th>Минимум<span>3,99 USD</span></th>
+                  <th class="price-list__title">Минимум <br><span class="price-list__price">3,99 USD</span></th>
                 </tr>
-                <tr>
-                  <td>Розовый фильтр</td>
-                </tr>
-                <tr>
-                  <td>Смайлики</td>
-                </tr>
-                <tr>
-                  <td>Комментарии</td>
-                </tr>
+                <tbody class="price-list__content">
+                  <tr>
+                    <td>Розовый фильтр</td>
+                  </tr>
+                  <tr>
+                    <td>Смайлики</td>
+                  </tr>
+                  <tr>
+                    <td>Комментарии</td>
+                  </tr>
+                </tbody>
               </table>
             </li>
             <li class="price-list__item price-list__item--maximum slider__item">
               <table class="price-list__details">
                 <tr>
-                  <th>Максимум<span>3,99 USD</span></th>
+                  <th class="price-list__title">Максимум <br><span class="price-list__price">3,99 USD</span></th>
                 </tr>
-                <tr>
-                  <td>Розовый фильтр</td>
-                </tr>
-                <tr>
-                  <td>Смайлики</td>
-                </tr>
-                <tr>
-                  <td>Комментарии</td>
-                </tr>
+                <tbody class="price-list__content">
+                  <tr>
+                    <td>Розовый фильтр</td>
+                  </tr>
+                  <tr>
+                    <td>Смайлики</td>
+                  </tr>
+                  <tr>
+                    <td>Комментарии</td>
+                  </tr>
+                </tbody>
               </table>
             </li>
           </ul>
           <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__heading">Остались вопросы? Свяжитесь с нами</p>
-        <b class="contacts__title">Звоните:</b>
-        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555 66 66</a>
-        <b class="contacts__title">Пишите:</b>
-        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        <b class="contacts__title">Приезжайте в гости:</b>
-        <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__heading">Остались вопросы? Свяжитесь с нами</p>
+          <div class="contacts__container">
+            <p class="contacts__title">Звоните:</p>
+            <p class="contacts__detail"><a class="contacts__detail" href="tel:+78125556666">+7 (812) 555 66 66</a></p>
+          </div>
+          <div class="contacts__container">
+            <p class="contacts__title">Пишите:</p>
+            <p class="contacts__detail"><a class="contacts__detail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          </div>
+          <div class="contacts__container">
+            <p class="contacts__title">Приезжайте в гости:</p>
+            <p class="contacts__detail">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
         <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CGTbf65t" width="320" height="250" frameborder="1" allowfullscreen="true"></iframe>
-        <p><img class="contacts__map--image" src="https://via.placeholder.com/150x150" alt="Адрес: Санкт-Петербург, ул. Большая Конюшенная, 19/8"></p>
+        <p><img class="contacts__map--image" src="img/bg-map-mobile@1x.png" alt="Адрес: Санкт-Петербург, ул. Большая Конюшенная, 19/8"></p>
       </section>
     </main>
   </body>

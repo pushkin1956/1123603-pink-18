@@ -1,0 +1,30 @@
+.contest-form__input-label {
+  @include font-regular;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.contest-form__input {
+  width: 276px;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 18px;
+  padding-bottom: 13px;
+
+  @include font-regular;
+  // line-height: 0;
+  border: solid 2px $grey-border;
+  outline: none;
+}
+
+.contest-form__input--textarea {
+  height: 197px;
+}
+
+.contest-form__input::placeholder {
+  @include font-regular;
+}
+
+.contest-form__item {
+  margin-bottom: 29px;
+}

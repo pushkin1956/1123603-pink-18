@@ -5,12 +5,12 @@ body {
 @import "fonts.scss";
 @import "colors.scss";
 @import "mixins.scss";
+@import "utils.scss";
 @import "normalize.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/main-background.scss";
-@import "blocks/utils.scss";
 @import "blocks/page-main.scss";
 @import "blocks/button.scss";
 @import "blocks/offer-download.scss";
@@ -21,3 +21,12 @@ body {
 @import "blocks/social.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/copyright.scss";
+@import "blocks/price.scss";
+@import "blocks/price-list.scss";
+@import "blocks/contacts.scss";
+@import "blocks/photo-filter.scss";
+@import "blocks/filter-icons.scss";
+@import "blocks/form.scss";
+@import "blocks/contest-form.scss";
+@import "blocks/contest-fieldset.scss";
+@import "blocks/fieldset-wrapper.scss";

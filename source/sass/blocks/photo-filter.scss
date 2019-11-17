@@ -1,0 +1,29 @@
+.photo-filter__heading {
+  @include font-regular;
+}
+
+.photo-filter__wrapper {
+  padding-top: 20px;
+  padding-bottom: 41px;
+  background-color: $light-grey;
+}
+
+.photo-filter__image {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 42px;
+}
+
+.photo-filter__btn--post {
+  width: 280px;
+  margin-top: 38px;
+  margin-bottom: 12px;
+  color: $pink;
+  border-color: $pink;
+}
+
+.photo-filter__btn--cancel {
+  width: 280px;
+  color: $main-light;
+  border-color: $main-light;
+}
