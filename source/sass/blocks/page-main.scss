@@ -4,6 +4,7 @@
 
 .page-main__heading {
   @include font-light;
+  font-weight: 300;
   color: $white;
 }
 

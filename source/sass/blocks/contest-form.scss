@@ -7,12 +7,12 @@
 .contest-form__input {
   width: 276px;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 12px;
   padding-right: 18px;
-  padding-bottom: 16px;
+  padding-bottom: 13px;
 
   @include font-regular;
-  line-height: 0;
+  // line-height: 0;
   border: solid 2px $grey-border;
   outline: none;
 }

@@ -13,3 +13,17 @@
   margin: 0 auto;
   padding-bottom: 42px;
 }
+
+.photo-filter__btn--post {
+  width: 280px;
+  margin-top: 38px;
+  margin-bottom: 12px;
+  color: $pink;
+  border-color: $pink;
+}
+
+.photo-filter__btn--cancel {
+  width: 280px;
+  color: $main-light;
+  border-color: $main-light;
+}

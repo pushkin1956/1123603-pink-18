@@ -6,3 +6,10 @@
   color: $white;
   text-decoration: none;
 }
+
+.site-list__item {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  line-height: 32px;
+}

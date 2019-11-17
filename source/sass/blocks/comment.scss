@@ -25,15 +25,15 @@
 }
 
 .comment__description {
-  margin: 0;
-
   @include font-regular;
   line-height: 24px;
   text-align: left;
 }
 
 .comment__likes {
-  margin: 0;
+  @include font-regular;
+  margin-left: 33px;
   font-size: 12px;
+  text-align: left;
   color: $pink;
 }
