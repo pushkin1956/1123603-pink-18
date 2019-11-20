@@ -24,6 +24,7 @@
 
 .timer-icon__layer3 p {
   margin: 0;
+
   @include font-bold;
   font-size: 96px;
   color: $pink;
