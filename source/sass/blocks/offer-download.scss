@@ -2,55 +2,92 @@
   padding-top: 28px;
 }
 
+.offer-download__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  min-height: 210px;
+  margin-top: 347px;
+}
+
+.offer-download__slogan {
+  width: 225px;
+  margin: auto;
+}
+
+.offer-download__image--tablet,
+.offer-download__image--desktop {
+  display: none;
+}
+
 .offer-download__icon-list {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205px;
 }
 
 .offer-download__description {
+  width: 230px;
+  margin: 0;
+
   @include font-light;
   font-size: 14px;
   line-height: 24px;
   color: $white;
 }
 
-.offer-download__icon {
-  position: relative;
-  width: 47px;
-  height: 56px;
+@media (min-width: $tablet-width) {
+  .offer-download__slogan{
+    width: 186px;
+    margin: 0;
+    margin-left: 58px;
+    margin-bottom: 39px;
+    font-size: 40px;
+  }
+
+  .offer-download__wrapper {
+    height: 240px;
+    margin-top: 0;
+  }
+
+  .offer-download__download-btn {
+    width: 300px;
+  }
+
+  .offer-download__image--tablet {
+    display: block;
+    margin-top: -334px;
+  }
+
+  .offer-download__image--mobile {
+    display: none;
+  }
 }
 
-.offer-download__icon--apple::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 47px;
-  height: 56px;
-  background-image: url("../../img/logo-apple.svg");
-  background-repeat: no-repeat;
-  transform: translate(-50%, -50%);
-}
+@media (min-width: $desktop-width) {
+  .offer-download__slogan{
+    width: 231px;
+    margin-top: 121px;
+    margin-bottom: 61px;
+    font-size: 50px;
+  }
 
-.offer-download__icon--android::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 43px;
-  height: 47px;
-  background-image: url("../../img/logo-android.svg");
-  background-repeat: no-repeat;
-  transform: translate(-50%, -50%);
-}
+  .offer-download__wrapper {
+    height: 280px;
+  }
 
-.offer-download__icon--windows::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 44px;
-  height: 41px;
-  background-image: url("../../img/logo-microsoft.svg");
-  background-repeat: no-repeat;
-  transform: translate(-50%, -50%);
+  .offer-download__image--desktop {
+    display: block;
+    margin-top: -344px;
+  }
+
+  .offer-download__image--mobile,
+  .offer-download__image--tablet {
+    display: none;
+  }
 }

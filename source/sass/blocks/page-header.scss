@@ -1,3 +1,17 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: $main-color;
+}
+
+.page-header__wrapper {
+  display: flex;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    flex-direction: row;
+    min-height: 110px;
+    // background-color: $main-light-heading;
+  }
 }

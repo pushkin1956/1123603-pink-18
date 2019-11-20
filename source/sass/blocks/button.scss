@@ -1,13 +1,13 @@
 .button {
   width: 281px;
-  padding-top: 12px;
-  padding-left: 39px;
-  padding-bottom: 12px;
-  padding-right: 40px;
+  padding-top: 16px;
+  padding-left: 35px;
+  padding-bottom: 13px;
+  padding-right: 35px;
   text-decoration: none;
 
   @include font-bold;
-  line-height: 18px;
+  // line-height: 18px;
   color: $white;
   background: none;
   border: solid 3px $white;
