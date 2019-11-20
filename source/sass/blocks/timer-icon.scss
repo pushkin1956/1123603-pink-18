@@ -1,0 +1,30 @@
+.timer-icon {
+  width: 238px;
+  margin-top: -43px;
+}
+
+.timer-icon__layer1 svg {
+  width: 238px;
+  height: 276px;
+  fill: $grey-timer;
+}
+
+.timer-icon__layer2 {
+  width: 202px;
+    height: 202px;
+    margin-top: -224px;
+    margin-left: 18px;
+    border: solid 25px $pink;
+    border-radius: 50%;
+}
+
+.timer-icon__layer3 {
+  margin-top: 20px;
+}
+
+.timer-icon__layer3 p {
+  margin: 0;
+  @include font-bold;
+  font-size: 96px;
+  color: $pink;
+}
