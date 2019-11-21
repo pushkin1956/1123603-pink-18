@@ -13,7 +13,7 @@
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
-  // margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .advantages__list {
@@ -29,7 +29,7 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @include font-bold;
   line-height: 24px;
@@ -44,35 +44,37 @@
 }
 
 .advantages__background {
-  position: relative;
-  padding-top: 130px;
+  // position: relative;
+  padding-top: 80px;
   background-color: $light-grey;
-}
-
-.advantages__background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
 }
 
 .advantages__image {
   margin: 0 auto;
 }
 
-.advantages__image--tablet {
+.advantages__image--tablet,
+.advantages__image--desktop {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .advantages__background {
+    padding-top: 0;
+  }
+
   .advantages__heading {
     width: 590px;
     margin-bottom: 0;
     font-size: 40px;
+  }
+
+  .advantages__heading--second-line {
+    margin-bottom: 50px;
   }
 
   .advantages__wrapper {
@@ -81,6 +83,7 @@
 
   .advantages__list {
     width: 308px;
+    margin-top: 67px;
   }
 
   .advantages__title,
@@ -88,7 +91,8 @@
     text-align: left;
   }
 
-  .advantages__image--mobile {
+  .advantages__image--mobile,
+  .advantages__image--desktop {
     display: none;
   }
 
@@ -108,14 +112,19 @@
     margin-bottom: 97px;
   }
 
+  .advantages__wrapper {
+    width: 938px;
+  }
+
   .advantages__list {
-    width: 940px;
+    width: 938px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .advantages__item {
     width: 240px;
+    // margin-left: 10px;
   }
 
   .advantages__title {
@@ -132,5 +141,15 @@
 
   .advantages__image--tablet {
     display: none;
+  }
+
+  .advantages__image--desktop {
+    display: block;
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .advantages__image--desktop:nth-child(3n) {
+    margin-right: 0;
   }
 }
