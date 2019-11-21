@@ -1,18 +1,17 @@
 .main-background {
-  margin: 0;
   padding-bottom: 35px;
   background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-size: 258px 286px, 320px 462px;
-  background-position: left top 176px, top;
+  background-position: bottom, top;
   background-repeat: no-repeat;
   background-color: $main-color;
 }
 
 @media (min-width: $tablet-width) {
   .main-background {
-    height: 619px;
+    height: 729px;
     background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
-    background-size: 660px 545px, 660px 619px;
+    background-size: 660px 545px, 1200px 729px;
     background-position: bottom, top;
     background-repeat: no-repeat;
   }
@@ -21,7 +20,6 @@
 @media (min-width: $desktop-width) {
   .main-background {
     height: 853px;
-    margin-top: -110px;
     background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
     background-size: 1050px 645px, 2560px 853px;
     background-repeat: no-repeat;
