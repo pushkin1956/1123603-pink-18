@@ -117,14 +117,17 @@
   }
 
   .advantages__list {
-    width: 938px;
+    width: 905px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .advantages__item {
     width: 240px;
-    // margin-left: 10px;
+  }
+
+  .advantages__item:nth-child(1) {
+    margin-left: 20px;
   }
 
   .advantages__title {
