@@ -1,6 +1,5 @@
 .comment {
   width: 280px;
-  margin-bottom: 20px;
   padding-left: 17px;
   padding-top: 25px;
   padding-right: 31px;
@@ -9,22 +8,21 @@
   background-color: $light-grey;
 }
 
-.comment--view-of-day {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .comment__author {
-  font-family: "OpenSans Bold", "Arial", sans-serif;
+  @include font-bold;
   font-size: 14px;
+  text-align: left;
+  font-style: normal;
 }
 
 .comment__time {
-  font-family: "OpenSans Light", "Arial", sans-serif;
+  @include font-light;
   font-size: 12px;
 }
 
 .comment__description {
+  margin: 0;
+
   @include font-regular;
   line-height: 24px;
   text-align: left;
@@ -32,8 +30,36 @@
 
 .comment__likes {
   @include font-regular;
+  margin: 0;
   margin-left: 33px;
   font-size: 12px;
   text-align: left;
   color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    width: 300px;
+    min-height: 157px;
+    padding-left: 27px;
+    padding-top: 31px;
+    padding-bottom: 30px;
+  }
+
+  .comment--view-of-day {
+    width: 620px;
+  }
+
+  .comment__likes {
+    margin: 0;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment--view-of-day {
+    width: 940px;
+    min-height: 96px;
+    padding-bottom: 27px;
+  }
 }

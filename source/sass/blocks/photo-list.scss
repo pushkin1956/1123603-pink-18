@@ -1,17 +1,67 @@
 .photo-list {
+  display: flex;
+  flex-direction: column;
+
   @include list-reset;
 }
 
 .photo-list__item {
   display: block;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-.photo-list__item--view-of-day {
-  margin: 0;
-}
-
-.photo-list__item img {
+.photo-list__image--mobile {
   display: block;
+}
+
+.photo-list__image--tablet,
+.photo-list__image--desktop {
+  display: none;
+}
+
+.photo-list__item--view-of-day img {
+  margin-left: -20px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .photo-list__image--mobile,
+  .photo-list__image--desktop {
+    display: none;
+  }
+
+  .photo-list__image--tablet {
+    display: block;
+  }
+
+  .photo-list__item--view-of-day {
+    width: 620px;
+  }
+
+  .photo-list__item--view-of-day img {
+    margin-left: -40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list__image--tablet {
+    display: none;
+  }
+
+  .photo-list__image--desktop {
+    display: block;
+  }
+
+  .photo-list__item--view-of-day {
+    width: 940px;
+  }
+
+  .photo-list__item--view-of-day img {
+    margin-left: -130px;
+  }
 }
