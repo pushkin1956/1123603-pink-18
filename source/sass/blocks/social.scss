@@ -1,5 +1,10 @@
 .social__list {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  width: 173px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .social__background {
@@ -51,4 +56,10 @@
   background-image: url("../../img/icon-youtube.svg");
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin: 0;
+  }
 }

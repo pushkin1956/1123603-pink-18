@@ -1,17 +1,35 @@
 .photo-filter__heading {
+  margin: 0;
+  margin-bottom: 48px;
+
   @include font-regular;
 }
 
+.photo-filter__background {
+  background-color: $light-grey;
+}
+
 .photo-filter__wrapper {
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   padding-bottom: 41px;
-  background-color: $light-grey;
+}
+
+.photo-filter__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .photo-filter__image {
   display: block;
   margin: 0 auto;
-  padding-bottom: 42px;
+  margin-bottom: 42px;
+}
+
+.photo-filter__image--tablet,
+.photo-filter__image--desktop {
+  display: none;
 }
 
 .photo-filter__btn--post {
@@ -26,4 +44,47 @@
   width: 280px;
   color: $main-light;
   border-color: $main-light;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-filter__heading {
+    margin-bottom: 72px;
+    font-size: 18px;
+  }
+
+  .photo-filter__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  .photo-filter__image {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-filter__heading {
+    margin-bottom: 69px;
+  }
+
+  .photo-filter__background {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .photo-filter__wrapper {
+    padding-left: 80px;
+    padding-top: 57px;
+    padding-right: 60px;
+    padding-bottom: 57px;
+  }
 }
