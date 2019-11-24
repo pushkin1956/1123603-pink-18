@@ -103,10 +103,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts__container{
-    &:first-child{
+  .contacts__container {
+    &:first-child {
       order: -2;
     }
+
     &:last-child {
       flex-grow: 0;
       order: -1;
@@ -114,7 +115,6 @@
   }
 
   .contacts__map {
-
     &--iframe {
       width: 1200px;
     }
