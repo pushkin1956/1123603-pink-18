@@ -1,5 +1,50 @@
 .main-nav {
+  width: 100%;
+
   @include font-bold;
   text-transform: uppercase;
   color: $white;
+}
+
+.main-nav__flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  min-height: 69px;
+}
+
+.main-nav__style-wrap {
+  box-shadow: 0 1px $black;
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 23px;
+  margin-top: 21px;
+  background-color: transparent;
+  border: 0;
+  background-image: url("../../img/icon-menu-cross.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__flex-wrap {
+    min-height: 109px;
+  }
+
+  .main-nav__toggle {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    @include font-regular;
+    font-size: 18px;
+    text-transform: none;
+  }
+
+  .main-nav__style-wrap {
+    display: none;
+  }
 }

@@ -1,3 +1,26 @@
 .page-header {
+  // position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background-color: $main-color;
+}
+
+.page-header__wrapper {
+  display: flex;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    min-height: 110px;
+    background-color: $main-light-heading;
+  }
+
+  .page-header__wrapper {
+    width: 938px;
+    margin: 0 auto;
+  }
 }

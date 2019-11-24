@@ -1,8 +1,44 @@
 .main-background {
-  margin: 0;
-  padding-top: 35px;
+  padding-top: 95px;
   padding-bottom: 35px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: 320px 462px;
+  background-position: top center;
   background-repeat: no-repeat;
   background-color: $main-color;
+}
+
+.main-background--photo-page {
+  height: 237px;
+  padding-top: 101px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-background {
+    height: 729px;
+    padding-top: 191px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-size: 1200px 729px;
+    background-repeat: no-repeat;
+  }
+
+  .main-background--photo-page,
+  .main-background--form-page {
+    height: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-background {
+    height: 853px;
+    padding-top: 184px;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-size: 2560px 853px;
+    background-repeat: no-repeat;
+  }
+
+  .main-background--photo-page,
+  .main-background--form-page {
+    height: 394px;
+  }
 }

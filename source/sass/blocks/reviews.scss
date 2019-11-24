@@ -1,6 +1,6 @@
 .reviews {
-  padding-top: 49px;
-  font-family: "OpenSans Light", "Arial", sans-serif;
+  @include font-light;
+  background-color: $white;
 }
 
 .reviews__list {
