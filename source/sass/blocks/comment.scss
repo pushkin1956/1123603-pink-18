@@ -1,4 +1,6 @@
 .comment {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   padding-left: 17px;
   padding-top: 25px;
@@ -47,12 +49,20 @@
   }
 
   .comment--view-of-day {
+    position: relative;
     width: 620px;
+    min-height: 121px;
   }
 
   .comment__likes {
     margin: 0;
     margin-top: auto;
+  }
+
+  .comment__likes--view-of-day {
+    position: absolute;
+    right: 59px;
+    top: 25px;
   }
 }
 
