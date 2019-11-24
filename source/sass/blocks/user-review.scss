@@ -1,0 +1,16 @@
+.user-review__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 49px;
+}
+
+@media (min-width: $desktop-width) {
+  .user-review {
+    width: 940px;
+  }
+
+  .user-review__item {
+    width: 690px;
+    margin: auto;
+  }
+}
