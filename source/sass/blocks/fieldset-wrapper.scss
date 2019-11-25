@@ -4,3 +4,9 @@
   padding-bottom: 50px;
   background-color: $light-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .fieldset-wrapper {
+    background-color: $white;
+  }
+}

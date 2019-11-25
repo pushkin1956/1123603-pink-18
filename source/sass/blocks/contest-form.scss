@@ -1,7 +1,20 @@
-.contest-form,
+.contest-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .contest-form__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--bottom {
+    align-items: center;
+  }
 }
 
 .contest-form__input-container {
@@ -15,10 +28,6 @@
   text-align: left;
   color: $pink;
   text-transform: uppercase;
-
-  &--textarea {
-    text-align: center;
-  }
 }
 
 .contest-form__input {
@@ -32,21 +41,76 @@
   font-size: 18px;
   border: solid 2px $grey-border;
   outline: none;
-}
 
-.contest-form__input--textarea {
-  height: 197px;
-}
+  &--textarea {
+    height: 197px;
+  }
 
-.contest-form__input::placeholder {
-  @include font-regular;
+  &::placeholder {
+    @include font-regular;
   font-size: 18px;
+  }
 }
 
-.contest-form__item {
-  margin-bottom: 29px;
+@media (min-width: $tablet-width) {
+  .contest-form__item--name,
+  .contest-form__item--bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+  }
 
-  &:last-child {
-    margin-bottom: 0;
+  .contest-form__input-label {
+    &--name {
+      margin-right: 20px;
+      padding: 0;
+    }
+
+    &--contacts {
+      order: 1;
+    }
+  }
+
+  .contest-form__input {
+    flex-grow: 1;
+
+    &--contacts,
+    &--textarea {
+      width: 496px;
+    }
+
+    &::placeholder {
+      text-align: left;
+    }
+  }
+
+  .contest-form__input-container {
+    &--name {
+      order: 1;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--textarea {
+      order: 5;
+
+    }
+  }
+
+  .fieldset-wrapper {
+    &--achievements {
+      order: 4;
+    }
+
+    &--travel-app {
+      order: 2;
+    }
+  }
+
+  .contest-form__item--bottom {
+    order: 6;
   }
 }

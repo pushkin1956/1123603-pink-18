@@ -8,7 +8,8 @@
 
 .form__note {
   display: block;
-  margin: auto;
+  width: 181px;
+  // margin: auto;
 
   @include font-regular;
   text-transform: uppercase;
@@ -19,8 +20,10 @@
 }
 
 .form__btn {
+  display: block;
   width: 276px;
   height: 59px;
+  // margin: auto;
   margin-top: 52px;
   margin-bottom: 46px;
   line-height: 30px;

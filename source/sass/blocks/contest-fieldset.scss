@@ -6,11 +6,17 @@
 
 .contest-fieldset__title {
   margin-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @include font-regular;
   line-height: 18px;
   color: $pink;
   text-transform: uppercase;
+
+  &--contacts {
+    display: none;
+  }
 }
 
 .contest-fieldset__list {
@@ -27,4 +33,26 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .contest-fieldset {
+    padding-bottom: 50px;
+    border: solid 2px $grey-border;
+  }
+
+  .contest-fieldset__title {
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &--contacts {
+      display: inline;
+    }
+  }
+
+  .contest-fieldset__inner-container {
+    width: 496px;
+    margin: auto;
+  }
+
 }
