@@ -1,8 +1,15 @@
 .form__heading {
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 49px;
+
   @include font-regular;
 }
 
 .form__note {
+  display: block;
+  margin: auto;
+
   @include font-regular;
   text-transform: uppercase;
 }

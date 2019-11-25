@@ -1,8 +1,12 @@
 .contest-fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 .contest-fieldset__title {
+  margin-bottom: 40px;
+
   @include font-regular;
   line-height: 18px;
   color: $pink;
@@ -13,4 +17,14 @@
   @include list-reset;
   @include font-regular;
   text-align: left;
+}
+
+.contest-fieldset__item {
+  margin-left: 72px;
+  margin-bottom: 63px;
+  font-size: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

@@ -1,7 +1,24 @@
+.contest-form,
+.contest-form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__input-container {
+  margin-bottom: 44px;
+}
+
 .contest-form__input-label {
+  padding-left: 21px;
+
   @include font-regular;
+  text-align: left;
   color: $pink;
   text-transform: uppercase;
+
+  &--textarea {
+    text-align: center;
+  }
 }
 
 .contest-form__input {
@@ -12,7 +29,7 @@
   padding-bottom: 13px;
 
   @include font-regular;
-  // line-height: 0;
+  font-size: 18px;
   border: solid 2px $grey-border;
   outline: none;
 }
@@ -23,8 +40,13 @@
 
 .contest-form__input::placeholder {
   @include font-regular;
+  font-size: 18px;
 }
 
 .contest-form__item {
   margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
