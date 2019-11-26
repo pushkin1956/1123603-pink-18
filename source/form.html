@@ -51,10 +51,11 @@
       <section class="form">
         <div class="container">
           <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
-          <p class="form__heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="form__heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__heading form__heading--mobile-hide">Пожалуйста, заполните форму ниже:</span></p>
         </div>
+        <div class="container">
         <form class="form__contest-form contest-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="container contest-form__input-container contest-form__input-container--name">
+          <div class="contest-form__input-container contest-form__input-container--name">
             <div class="contest-form__item contest-form__item--name">
               <label class="contest-form__input-label contest-form__input-label--name" for="surname-field">Фамилия</label>
               <input class="contest-form__input" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
@@ -69,39 +70,39 @@
             </div>
           </div>
           <div class="fieldset-wrapper fieldset-wrapper--achievements">
-            <div class="container">
-              <fieldset class="form__fieldset contest-fieldset">
+            <!-- <div class="container"> -->
+              <fieldset class="form__fieldset contest-fieldset contest-fieldset--achievements">
                 <legend class="contest-fieldset__title">Ваши безбашенные достижения в путешествии</legend>
-                <ul class="contest-fieldset__list">
-                  <li class="contest-fieldset__item">
+                <ul class="contest-fieldset__list contest-fieldset__list--achievements">
+                  <li class="contest-fieldset__item contest-fieldset__item--achievements">
                     <input class="visually-hidden" type="checkbox" id="selfie" name="selfie" checked>
                     <label for="selfie">Сделал селфи с акулой</label>
                   </li>
-                  <li class="contest-fieldset__item">
+                  <li class="contest-fieldset__item contest-fieldset__item--achievements">
                     <input class="visually-hidden" type="checkbox" id="sunburned" name="sunburned" checked>
                     <label for="sunburned">Обгорел на пляже</label>
                   </li>
-                  <li class="contest-fieldset__item">
+                  <li class="contest-fieldset__item contest-fieldset__item--achievements">
                     <input class="visually-hidden" type="checkbox" id="chuck-norris" name="chuck-norris">
                     <label for="chuck-norris">Видел Чака Норриса</label>
                   </li>
-                  <li class="contest-fieldset__item">
+                  <li class="contest-fieldset__item contest-fieldset__item--achievements">
                     <input class="visually-hidden" type="checkbox" id="souvenir" name="souvenir">
                     <label for="souvenir">Накупил сувениров</label>
                   </li>
-                  <li class="contest-fieldset__item">
+                  <li class="contest-fieldset__item contest-fieldset__item--achievements">
                     <input class="visually-hidden" type="checkbox" id="tower" name="tower" checked>
                     <label for="tower">Удержал башню</label>
                   </li>
-                  <li class="contest-fieldset__item">
+                  <li class="contest-fieldset__item contest-fieldset__item--achievements">
                     <input class="visually-hidden" type="checkbox" id="hotel" name="hotel" checked>
                     <label for="hotel">Разгромил отель</label>
                   </li>
                 </ul>
               </fieldset>
-            </div>
+            <!-- </div> -->
           </div>
-          <div class="container contest-form__input-container contest-form__input-container--contacts">
+          <div class="contest-form__input-container contest-form__input-container--contacts">
             <fieldset class="form__fieldset contest-fieldset contest-fieldset--contacts">
               <legend class="contest-fieldset__title contest-fieldset__title--contacts">Контактная информация</legend>
               <div class="contest-fieldset__inner-container">
@@ -117,27 +118,27 @@
             </fieldset>
           </div>
           <div class="fieldset-wrapper fieldset-wrapper--travel-app">
-            <div class="container">
-              <fieldset class="form__fieldset contest-fieldset">
+            <!-- <div class="container"> -->
+              <fieldset class="form__fieldset contest-fieldset contest-fieldset--travel-app">
                 <legend class="contest-fieldset__title">С каким приложением путешествовали?</legend>
-                <ul class="contest-fieldset__list">
-                  <li class="contest-fieldset__item">
+                <ul class="contest-fieldset__list contest-fieldset__list--travel-app">
+                  <li class="contest-fieldset__item contest-fieldset__item--travel-app">
                     <input class="visually-hidden" type="radio" id="ios" name="application" value="pink-ios" checked>
                     <label for="ios">Pink для iOS</label>
                   </li>
-                  <li class="contest-fieldset__item">
+                  <li class="contest-fieldset__item contest-fieldset__item--travel-app">
                     <input class="visually-hidden" type="radio" id="android" name="application" value="pink-android" checked>
                     <label for="android">Pink на Android</label>
                   </li>
-                  <li class="contest-fieldset__item">
+                  <li class="contest-fieldset__item contest-fieldset__item--travel-app">
                     <input class="visually-hidden" type="radio" id="windows" name="application" value="windows-phone" checked>
                     <label for="windows">Windows Phone</label>
                   </li>
                 </ul>
               </fieldset>
-            </div>
+            <!-- </div> -->
           </div>
-          <div class="container contest-form__input-container contest-form__input-container--textarea">
+          <div class="contest-form__input-container contest-form__input-container--textarea">
             <fieldset class="form__fieldset contest-fieldset contest-fieldset--textarea">
               <legend class="contest-fieldset__title contest-fieldset__title--textarea">Опишите свои эмоции</legend>
               <div class="contest-fieldset__inner-container">
@@ -146,13 +147,14 @@
               </div>
             </fieldset>
           </div>
-          <div class="container contest-form__item contest-form__item--bottom">
+          <div class="contest-form__item contest-form__item--bottom">
             <button class="form__btn form__btn--submit button" type="submit">Отправить форму</button>
             <small class="form__note">
                 <sup>*</sup> — обязательные поля
               </small>
           </div>
         </form>
+        </div>
       </section>
     </main>
 
