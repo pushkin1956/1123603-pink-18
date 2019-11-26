@@ -55,3 +55,40 @@
     margin: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contest-fieldset {
+    padding: 0;
+
+    &--travel-app {
+      padding-bottom: 27px;
+    }
+
+    &--textarea {
+      padding-bottom: 45px;
+    }
+  }
+
+  .contest-fieldset__inner-container {
+    display: flex;
+    justify-content: space-between;
+    width: 820px;
+  }
+
+  .contest-fieldset__list--achievements {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 168px;
+  }
+
+  .contest-fieldset__item--achievements {
+    width: 200px;
+    margin-bottom: 63px;
+    margin-left: 0;
+
+    &:nth-child(2n) {
+      margin-bottom: 0;
+    }
+  }
+}

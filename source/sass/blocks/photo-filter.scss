@@ -32,18 +32,28 @@
   display: none;
 }
 
-.photo-filter__btn--post {
+.photo-filter__btn {
   width: 280px;
-  margin-top: 38px;
-  margin-bottom: 12px;
-  color: $pink;
-  border-color: $pink;
-}
 
-.photo-filter__btn--cancel {
-  width: 280px;
-  color: $main-light;
-  border-color: $main-light;
+  &--post {
+    margin-top: 38px;
+    margin-bottom: 12px;
+    color: $pink;
+    border-color: $pink;
+  }
+
+  &--cancel {
+    color: $main-light;
+    border-color: $main-light;
+  }
+
+  &--edit {
+    width: 50px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: $tablet-width) {

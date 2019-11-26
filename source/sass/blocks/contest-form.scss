@@ -58,7 +58,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 620px;
   }
 
   .contest-form__input-label {
@@ -99,17 +98,53 @@
     }
   }
 
-  .fieldset-wrapper {
-    &--achievements {
-      order: 4;
+  .contest-form__item--bottom {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-form {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contest-form__input-container {
+    &--name {
+      width: 435px;
     }
 
-    &--travel-app {
-      order: 2;
+    &--contacts {
+      width: 936px;
+    }
+
+    &--textarea {
+      width: 936px;
+      margin-bottom: 69px;
+    }
+  }
+
+  .contest-form__input {
+    &--contacts {
+      flex-grow: 0;
+    width: 375px;
+    }
+
+    &--textarea {
+      width: 816px;
+    }
+  }
+
+  .contest-form__item--name {
+    margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
   .contest-form__item--bottom {
-    order: 6;
+    width: 936px;
   }
 }

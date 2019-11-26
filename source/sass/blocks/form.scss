@@ -1,15 +1,18 @@
 .form__heading {
-  margin: 0;
+  margin: auto;
   margin-top: 50px;
   margin-bottom: 49px;
 
   @include font-regular;
+
+  &--mobile-hide {
+    display: none;
+  }
 }
 
 .form__note {
   display: block;
   width: 181px;
-  // margin: auto;
 
   @include font-regular;
   text-transform: uppercase;
@@ -23,10 +26,35 @@
   display: block;
   width: 276px;
   height: 59px;
-  // margin: auto;
   margin-top: 52px;
   margin-bottom: 46px;
   line-height: 30px;
   background-color: $green;
   border-radius: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__heading {
+    width: 490px;
+    font-size: 18px;
+
+    &--mobile-hide {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    margin-bottom: 30px;
+  }
+
+  .form__heading {
+    width: 752px;
+    margin-bottom: 89px;
+  }
+
+  .form__btn {
+    margin: 0;
+  }
 }
