@@ -8,12 +8,49 @@
 }
 
 .reviews__author-name {
+  margin-bottom: 25px;
+
   @include font-bold;
   font-style: normal;
   color: $black;
   line-height: 30px;
 }
 
+.reviews__author-info {
+  display: none;
+
+  @include font-regular;
+}
+
 .reviews__text {
   @include font-regular;
+}
+
+
+@media (min-width: $tablet-width) {
+  .reviews__text {
+    margin-bottom: 44px;
+    font-size: 18px;
+  }
+
+  .reviews__author-name {
+    order: 2;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .reviews__author-info {
+    display: inline;
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__author-info {
+    font-size: 18px;
+  }
 }

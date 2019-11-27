@@ -2,3 +2,26 @@
   padding-top: 40px;
   padding-bottom: 50px;
 }
+
+.page-footer--index {
+  display: none;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    &--index {
+      display: block;
+    }
+
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

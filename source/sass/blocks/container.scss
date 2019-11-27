@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.container--index-bg {
+  width: 320px;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     width: 620px;

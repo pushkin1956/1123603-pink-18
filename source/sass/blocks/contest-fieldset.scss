@@ -1,16 +1,94 @@
 .contest-fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 .contest-fieldset__title {
+  margin-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+
   @include font-regular;
   line-height: 18px;
   color: $pink;
   text-transform: uppercase;
+
+  &--contacts {
+    display: none;
+  }
 }
 
 .contest-fieldset__list {
   @include list-reset;
   @include font-regular;
   text-align: left;
+}
+
+.contest-fieldset__item {
+  margin-left: 72px;
+  margin-bottom: 63px;
+  font-size: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contest-fieldset {
+    padding-bottom: 50px;
+    border: solid 2px $grey-border;
+  }
+
+  .contest-fieldset__title {
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &--contacts {
+      display: inline;
+    }
+  }
+
+  .contest-fieldset__inner-container {
+    width: 496px;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-fieldset {
+    padding: 0;
+
+    &--travel-app {
+      padding-bottom: 27px;
+    }
+
+    &--textarea {
+      padding-bottom: 45px;
+    }
+  }
+
+  .contest-fieldset__inner-container {
+    display: flex;
+    justify-content: space-between;
+    width: 820px;
+  }
+
+  .contest-fieldset__list--achievements {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 168px;
+  }
+
+  .contest-fieldset__item--achievements {
+    width: 200px;
+    margin-bottom: 63px;
+    margin-left: 0;
+
+    &:nth-child(2n) {
+      margin-bottom: 0;
+    }
+  }
 }

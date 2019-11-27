@@ -1,17 +1,11 @@
 .price {
   position: relative;
+  overflow: hidden;
   padding-top: 147px;
-  padding-bottom: 102px;
+  padding-bottom: 51px;
   background-color: $light-grey;
-}
-
-.price::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
 }
