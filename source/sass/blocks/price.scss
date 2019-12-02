@@ -9,3 +9,9 @@
   background-size: 101% auto;
   background-position: 50% 0;
 }
+
+@media (min-width: $desktop-width) {
+  .price {
+    margin-top: -40px;
+  }
+}
