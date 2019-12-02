@@ -1,4 +1,6 @@
 .main-nav {
+  // position: absolute;
+  // z-index: 1;
   width: 100%;
   min-height: 69px;
 
@@ -14,6 +16,7 @@
 }
 
 .main-nav__style-wrap {
+  background-color: $main-color;
   box-shadow: 0 1px $black;
 }
 
@@ -54,7 +57,7 @@
 
 .main-nav--opened .main-nav__toggle {
   top: 0;
-  right:0;
+  right: 0;
 
   &::before,
   &::after {
