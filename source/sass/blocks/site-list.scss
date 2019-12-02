@@ -5,9 +5,14 @@
 }
 
 .site-list__item a {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  line-height: 32px;
   color: $white;
   text-transform: uppercase;
   text-decoration: none;
+  box-shadow: 0 1px $black, inset 0 1px rgba(255, 255, 255, 0.15);
 }
 
 .site-list__item a[href] {
@@ -16,16 +21,8 @@
   }
 
   &:active {
-    color: $light-pink;;
+    color: $light-pink;
   }
-}
-
-.site-list__item {
-  display: block;
-  padding-top: 16px;
-  padding-bottom: 15px;
-  line-height: 32px;
-  box-shadow: 0 1px $black, inset 0 1px rgba(255, 255, 255, 0.15);
 }
 
 @media (min-width: $desktop-width) {
@@ -37,14 +34,11 @@
     margin-top: 22px;
   }
 
-  .site-list__item {
-    box-shadow: none;
-  }
-
   .site-list__item a {
     @include font-regular;
     font-size: 18px;
     color: $white;
     text-transform: none;
+    box-shadow: none;
   }
 }
