@@ -6,7 +6,18 @@
 
 .site-list__item a {
   color: $white;
+  text-transform: uppercase;
   text-decoration: none;
+}
+
+.site-list__item a[href] {
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $light-pink;;
+  }
 }
 
 .site-list__item {
@@ -22,7 +33,18 @@
     flex-direction: row;
     justify-content: space-between;
     width: 621px;
-    margin-left: 173px;
+    margin-left: 175px;
     margin-top: 22px;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+  }
+
+  .site-list__item a {
+    @include font-regular;
+    font-size: 18px;
+    color: $white;
+    text-transform: none;
   }
 }
