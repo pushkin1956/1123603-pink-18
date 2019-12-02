@@ -1,6 +1,5 @@
 .offer-download__background {
   height: 367px;
-  // margin-left: -20px;
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-size: 258px 286px;
   background-position: bottom left;
@@ -48,7 +47,7 @@
 @media (min-width: $tablet-width) {
   .offer-download__background {
     height: 545px;
-    margin-top: -29px;
+    // margin-top: -29px;
     background-image: url("../../img/iphone-hand-tablet@1x.png");
     background-size: 660px 545px;
     background-repeat: no-repeat;
@@ -58,7 +57,7 @@
     width: 186px;
     margin: 0;
     margin-left: 58px;
-    margin-top: 22px;
+    // margin-top: 22px;
     margin-bottom: 39px;
     font-size: 40px;
   }
@@ -86,7 +85,7 @@
 @media (min-width: $desktop-width) {
   .offer-download__background {
     height: 645px;
-    margin-top: -11px;
+    // margin-top: -34px;
     background-image: url("../../img/iphone-hand-desktop@1x.png");
     background-size: 1050px 645px;
     background-repeat: no-repeat;
@@ -94,13 +93,25 @@
 
   .offer-download__slogan {
     width: 231px;
-    margin-left: 35px;
-    margin-top: 35px;
-    margin-bottom: 61px;
+    margin-left: 32px;
+    margin-top: -10px;
+    margin-bottom: 58px;
+    font-size: 50px;
   }
 
   .offer-download__wrapper {
     height: 280px;
+  }
+
+  .offer-download__description {
+    width: 300px;
+    font-size: 18px;
+  }
+
+  .offer-download__download-btn {
+    font-size: 21px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .offer-download__image--desktop {
