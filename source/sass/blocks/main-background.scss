@@ -1,4 +1,6 @@
 .main-background {
+  position: relative;
+  top: 259px;
   padding-top: 95px;
   padding-bottom: 271px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -15,6 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .main-background {
+    top: 255px;
     height: 729px;
     padding-top: 191px;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
@@ -30,8 +33,10 @@
 
 @media (min-width: $desktop-width) {
   .main-background {
+    top: 0;
     height: 853px;
-    padding-top: 184px;
+    padding: 0;
+    padding-top: 231px;
     background-image: url("../../img/bg-back-desktop@1x.jpg");
     background-size: 2560px 853px;
     background-repeat: no-repeat;
