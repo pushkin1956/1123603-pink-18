@@ -1,24 +1,20 @@
-.offer-download__background {
-  height: 367px;
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
-  background-size: 258px 286px;
-  background-position: bottom left;
-  background-repeat: no-repeat;
+.offer-download__slogan {
+  width: 225px;
 }
 
 .offer-download__wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   width: 281px;
-  min-height: 210px;
   margin-top: 347px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.offer-download__slogan {
-  width: 225px;
+.offer-download__download-btn {
+  margin-bottom: 32px;
 }
 
 .offer-download__image--tablet,
@@ -32,6 +28,7 @@
   justify-content: space-between;
   align-items: center;
   width: 205px;
+  margin-bottom: 29px;
 }
 
 .offer-download__description {
@@ -45,31 +42,26 @@
 }
 
 @media (min-width: $tablet-width) {
-  .offer-download__background {
-    height: 545px;
-    // margin-top: -29px;
-    background-image: url("../../img/iphone-hand-tablet@1x.png");
-    background-size: 660px 545px;
-    background-repeat: no-repeat;
-  }
-
   .offer-download__slogan {
     width: 186px;
     margin: 0;
     margin-left: 58px;
-    // margin-top: 22px;
     margin-bottom: 39px;
     font-size: 40px;
   }
 
   .offer-download__wrapper {
     width: 300px;
-    height: 240px;
-    margin-top: 0;
+    margin: 0;
   }
 
   .offer-download__download-btn {
     width: 300px;
+    margin-bottom: 46px;
+  }
+
+  .offer-download__icon-list {
+    margin-bottom: 44px;
   }
 
   .offer-download__image--tablet {
@@ -83,24 +75,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .offer-download__background {
-    height: 645px;
-    // margin-top: -34px;
-    background-image: url("../../img/iphone-hand-desktop@1x.png");
-    background-size: 1050px 645px;
-    background-repeat: no-repeat;
-  }
-
   .offer-download__slogan {
     width: 231px;
     margin-left: 32px;
     margin-top: -10px;
-    margin-bottom: 58px;
+    margin-bottom: 71px;
     font-size: 50px;
-  }
-
-  .offer-download__wrapper {
-    height: 280px;
   }
 
   .offer-download__description {
@@ -109,9 +89,14 @@
   }
 
   .offer-download__download-btn {
-    font-size: 21px;
+    margin-bottom: 67px;
     padding-left: 0;
     padding-right: 0;
+    font-size: 21px;
+  }
+
+  .offer-download__icon-list {
+    margin-bottom: 60px;
   }
 
   .offer-download__image--desktop {
