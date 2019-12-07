@@ -68,12 +68,12 @@
 
   .advantages__heading {
     width: 590px;
-    margin-bottom: 0;
-    font-size: 40px;
-  }
-
-  .advantages__heading--second-line {
     margin-bottom: 50px;
+    font-size: 40px;
+
+    &--br {
+      display: none;
+    }
   }
 
   .advantages__wrapper {
@@ -113,11 +113,8 @@
 
   .advantages__heading {
     width: 740px;
-    font-size: 50px;
-  }
-
-  .advantages__heading--second-line {
     margin-bottom: 83px;
+    font-size: 50px;
   }
 
   .advantages__wrapper {
