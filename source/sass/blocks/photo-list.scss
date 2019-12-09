@@ -7,7 +7,6 @@
 }
 
 .photo-list__item {
-  // display: block;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -50,10 +49,6 @@
   .photo-list__item--view-of-day {
     width: 620px;
   }
-
-  .photo-list__item--view-of-day img {
-    // margin-left: -40px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -71,9 +66,5 @@
 
   .photo-list__item--view-of-day {
     width: 940px;
-  }
-
-  .photo-list__item--view-of-day img {
-    // margin-left: -130px;
   }
 }
