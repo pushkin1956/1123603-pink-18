@@ -37,6 +37,7 @@
 
 @media (min-width: $desktop-width) {
   .research {
+    padding-top: 120px;
     background-color: $light-grey;
   }
 
@@ -46,6 +47,8 @@
 
   .research__description {
     width: 521px;
+    margin-right: 55px;
+    margin-bottom: 35px;
     font-size: 18px;
     line-height: 30px;
   }

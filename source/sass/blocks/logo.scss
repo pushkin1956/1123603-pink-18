@@ -2,10 +2,6 @@
   display: block;
 }
 
-.logo__logo-image--mobile {
-  margin-top: 22px;
-}
-
 .logo__logo-image--tablet,
 .logo__logo-image--desktop,
 .logo__footer-image--desktop {
@@ -25,7 +21,6 @@
 
     &--tablet {
       display: block;
-      margin-top: 27px;
     }
   }
 
@@ -42,7 +37,6 @@
 
     &--desktop {
       display: block;
-      margin-top: 27px;
     }
   }
 

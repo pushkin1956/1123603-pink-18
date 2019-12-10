@@ -1,7 +1,10 @@
 .user-review__item {
+  display: none;
+}
+
+.user-review__item--active {
   display: flex;
   flex-direction: column;
-  padding-top: 49px;
 }
 
 @media (min-width: $desktop-width) {

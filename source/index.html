@@ -9,19 +9,15 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <img class="logo logo__logo-image logo__logo-image--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Приложение Pink">
-        <nav class="main-nav">
-          <div class="main-nav__style-wrap">
-            <div class="container">
-              <div class="main-nav__flex-wrap">
-                <a class="logo">
-                  <img class="logo__logo-image logo__logo-image--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink">
-                  <img class="logo__logo-image logo__logo-image--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Приложение Pink">
-                </a>
-                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-              </div>
-            </div>
-          </div>
+        <div class="page-header__logo-wrap">
+          <a class="logo">
+            <img class="logo__logo-image logo__logo-image--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink">
+            <img class="logo__logo-image logo__logo-image--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Приложение Pink">
+            <img class="logo logo__logo-image logo__logo-image--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Приложение Pink">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>Главная</a>
@@ -44,40 +40,35 @@
       <h1 class="visually-hidden">Приложение Pink для обработки фотографий</h1>
       <section class="offer-download main-background">
         <div class="container container--index-bg">
-          <div class="offer-download__background">
-          <div class="container">
-            <h2 class="visually-hidden">Скачайте приложение Pink</h2>
-            <p class=" page-main__heading offer-download__slogan">Взгляните на жизнь иначе!</p>
-            <div class="offer-download__wrapper">
-              <a class="offer-download__download-btn button" href="#">Скачать приложение</a>
-              <ul class="offer-download__icon-list">
-                <li>
-                  <a href="https://www.apple.com/ios/app-store/" target="blank">
-                    <img class="offer-download__icon offer-download__icon--apple" src="img/logo-apple.svg" width="47" height="56"><span class="visually-hidden">Скачать в App Store</span></img>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://play.google.com/store" target="blank">
-                    <img class="offer-download__icon offer-download__icon--android" src="img/logo-android.svg" width="43" height="47"><span class="visually-hidden">Скачать в Google Play</span></img>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.microsoft.com/ru-ru/store/apps/windows" target="blank">
-                    <img class="offer-download__icon offer-download__icon--windows" src="img/logo-microsoft.svg" width="44" height="41"><span class="visually-hidden">Скачать в Windows App Store</span></img>
-                  </a>
-                </li>
-              </ul>
-              <p class="offer-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-            </div>
+          <h2 class="visually-hidden">Скачайте приложение Pink</h2>
+          <p class=" page-main__heading offer-download__slogan">Взгляните на жизнь иначе!</p>
+          <div class="offer-download__wrapper">
+            <a class="offer-download__download-btn button" href="#">Скачать приложение</a>
+            <ul class="offer-download__icon-list">
+              <li>
+                <a href="https://www.apple.com/ios/app-store/" target="blank">
+                  <img class="offer-download__icon offer-download__icon--apple" src="img/logo-apple.svg" width="47" height="56"><span class="visually-hidden">Скачать в App Store</span></img>
+                </a>
+              </li>
+              <li>
+                <a href="https://play.google.com/store" target="blank">
+                  <img class="offer-download__icon offer-download__icon--android" src="img/logo-android.svg" width="43" height="47"><span class="visually-hidden">Скачать в Google Play</span></img>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.microsoft.com/ru-ru/store/apps/windows" target="blank">
+                  <img class="offer-download__icon offer-download__icon--windows" src="img/logo-microsoft.svg" width="44" height="41"><span class="visually-hidden">Скачать в Windows App Store</span></img>
+                </a>
+              </li>
+            </ul>
+            <p class="offer-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-        </div>
         </div>
       </section>
       <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <p class="advantages__heading advantages__heading--first-line">Устали от серости мегаполиса?</p>
-          <p class="advantages__heading advantages__heading--second-line">Нам есть, что вам </br> предложить!</p>
+          <p class="advantages__heading">Устали от серости мегаполиса?<br><br class="advantages__heading--br">Нам есть, что вам <br> предложить!</p>
         </div>
         <div class="advantages__background">
           <div class="container">
@@ -131,7 +122,7 @@
           <h2 class="visually-hidden">Отзывы пользователей </h2>
           <div class="container">
             <ul class="reviews__list user-review slider__list">
-              <li class="user-review__item slider__item">
+              <li class="user-review__item user-review__item--active slider__item">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <small class="reviews__author-info">25 лет, водитель трамвая</small>
                 <bloquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</bloquote>
@@ -211,11 +202,9 @@
               <p class="contacts__detail">ул. Большая<br> Конюшенная, 19/8</p>
             </div>
           </div>
-          <div class="contacts__bg"></div>
-          <p><img class="contacts__map contacts__map--image-mobile" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Адрес: Санкт-Петербург, ул. Большая Конюшенная, 19/8"></p>
-          <p><img class="contacts__map contacts__map--image-tablet" src="img/bg-map-tablet@1x.jpg" width="700" height="848" alt="Адрес: Санкт-Петербург, ул. Большая Конюшенная, 19/8"></p>
-          <p><img class="contacts__map contacts__map--image-desktop" src="img/bg-map-desktop@1x.jpg" width="1200" height="976" alt="Адрес: Санкт-Петербург, ул. Большая Конюшенная, 19/8"></p>
-          <iframe class="contacts__map contacts__map--iframe" src="https://yandex.ru/map-widget/v1/-/CGTbf65t" width="320" height="250" frameborder="1" allowfullscreen="true"></iframe>
+        </div>
+        <div class="contacts__map">
+          <iframe class="contacts__map--iframe" src="https://yandex.ru/map-widget/v1/-/CGTbf65t" width="320" height="230" frameborder="0" allowfullscreen="true"></iframe>
         </div>
       </section>
     </main>
