@@ -24,10 +24,12 @@
 
 .form__btn {
   display: block;
-  width: 276px;
-  height: 59px;
+  width: 280px;
+  min-height: 63px;
   margin-top: 52px;
   margin-bottom: 46px;
+  padding-top: 12px;
+  padding-bottom: 14px;
   line-height: 30px;
   background-color: $green;
   border-radius: 5px;
@@ -41,6 +43,10 @@
     &--mobile-hide {
       display: inline;
     }
+  }
+
+  .form__btn {
+    width: 300px;
   }
 }
 
