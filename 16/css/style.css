@@ -630,8 +630,7 @@ template {
 @media (max-width: 320px) {
   .main-background {
     background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-size: 100% 462px;
-    overflow: hidden; } }
+    background-size: 100% 462px; } }
 
 @media (min-width: 321px) {
   .main-background {
@@ -711,7 +710,6 @@ template {
   border-radius: 50px; }
 
 .offer-download {
-  min-height: 733px;
   background-color: #283645; }
 
 .offer-download__slogan {
@@ -731,7 +729,6 @@ template {
       -ms-flex-align: center;
           align-items: center;
   width: 281px;
-  margin-top: 347px;
   margin-left: auto;
   margin-right: auto; }
 
