@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: $main-color;
+  background-color: $main-light-heading;
 }
 
 .page-header__logo-wrap {
@@ -13,7 +13,6 @@
   min-height: 69px;
   margin: 0 auto;
   padding-left: 20px;
-  // background-color: $main-light-heading;
   box-shadow: 0 1px $black;
 }
 
