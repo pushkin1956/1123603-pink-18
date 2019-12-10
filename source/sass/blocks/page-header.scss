@@ -16,6 +16,10 @@
   box-shadow: 0 1px $black;
 }
 
+.page-header__logo-wrap--nav-opened {
+  background-color: $main-color;
+}
+
 @media (min-width: $tablet-width) {
   .page-header__logo-wrap {
     width: $tablet-width;
