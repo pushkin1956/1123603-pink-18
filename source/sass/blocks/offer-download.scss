@@ -1,6 +1,5 @@
 .offer-download {
-  // min-height: 733px;
-  // padding-bottom: 35px;
+  padding-bottom: 300px;
   background-color: $main-color;
 }
 
@@ -14,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   width: 281px;
-  // margin-top: 347px;
+  margin-top: 347px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -48,6 +47,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .offer-download {
+    padding: 0;
+  }
+
   .offer-download__slogan {
     width: 186px;
     margin: 0;

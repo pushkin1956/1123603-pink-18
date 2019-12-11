@@ -1,12 +1,12 @@
 .main-background {
+  height: 462px;
   // margin-bottom: 28px;
   padding-top: 95px;
-  // padding-bottom: 300px;
+  padding-bottom: 300px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: $main-color;
 }
 
 .main-background--photo-page,
