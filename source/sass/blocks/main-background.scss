@@ -2,8 +2,8 @@
   // margin-bottom: 28px;
   padding-top: 95px;
   // padding-bottom: 300px;
-  // background-image: url("../img/bg-back-mobile@1x.jpg");
-  // background-size: 320px 462px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   background-color: $main-color;
@@ -16,26 +16,11 @@
   padding-bottom: 0;
 }
 
-@media (max-width: $mobile-width) {
-  .main-background {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-size: 100% 462px;
-  }
-}
-
-@media (min-width: 321px) {
-  .main-background {
-    height: 462px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: cover;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .main-background {
     height: 729px;
     padding-top: 184px;
-    // background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 1200px 729px;
     background-repeat: no-repeat;
   }
