@@ -36,7 +36,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 621px;
-    margin-left: 115px;
+    margin-left: 172px;
     margin-top: 24px;
     background-color: transparent;
   }
@@ -48,6 +48,10 @@
     font-size: 18px;
     color: $white;
     text-transform: none;
+    box-shadow: none;
+  }
+
+  .site-list__item:first-of-type a {
     box-shadow: none;
   }
 }

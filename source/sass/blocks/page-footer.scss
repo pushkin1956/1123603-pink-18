@@ -25,3 +25,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 95px;
+
+    &__container {
+      align-items: unset;
+      padding-top: 5px;
+    }
+  }
+}

@@ -63,3 +63,13 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-top: 5px;
+  }
+
+  .social__list {
+    margin-left: 16px;
+  }
+}

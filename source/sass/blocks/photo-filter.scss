@@ -48,7 +48,7 @@
   }
 
   &--edit {
-    width: 50px;
+    width: 44px;
     padding: 0;
     border: none;
     outline: none;
@@ -83,7 +83,7 @@
 
 @media (min-width: $desktop-width) {
   .photo-filter__heading {
-    margin-bottom: 69px;
+    margin-bottom: 65px;
   }
 
   .photo-filter__background {
@@ -96,5 +96,27 @@
     padding-top: 57px;
     padding-right: 60px;
     padding-bottom: 57px;
+  }
+
+  .photo-filter__container {
+    width: 410px;
+  }
+
+  .photo-filter__post-buttons {
+    display: flex;
+    width: 410px;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .photo-filter__btn {
+      &--post {
+      width: 183px;
+      margin: 0;
+    }
+
+    &--cancel {
+      width: 183px;
+    }
   }
 }
