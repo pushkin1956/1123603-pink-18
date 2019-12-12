@@ -6,6 +6,10 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-color: $main-color;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .main-background--photo-page,
@@ -20,9 +24,13 @@
     top: 255px;
     height: 729px;
     padding-top: 184px;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 1200px 729px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .main-background--photo-page,
@@ -37,9 +45,13 @@
     height: 853px;
     padding: 0;
     padding-top: 218px;
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: 2560px 853px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .main-background--photo-page,
