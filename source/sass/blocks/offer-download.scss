@@ -1,3 +1,8 @@
+.offer-download {
+  padding-bottom: 300px;
+  background-color: $main-color;
+}
+
 .offer-download__slogan {
   width: 225px;
 }
@@ -42,6 +47,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .offer-download {
+    padding: 0;
+  }
+
   .offer-download__slogan {
     width: 186px;
     margin: 0;

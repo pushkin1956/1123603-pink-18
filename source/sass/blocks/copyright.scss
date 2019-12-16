@@ -14,7 +14,7 @@
   right: 0;
   width: 27px;
   height: 34px;
-  background-image: url("../../img/logo-htmlacademy.svg");
+  background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
 }
@@ -27,5 +27,20 @@
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-top: 20px;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+  }
+
+  .copyright__logo::before {
+    top: -6px;
+    right: -16px;
   }
 }

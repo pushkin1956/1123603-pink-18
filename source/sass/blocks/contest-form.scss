@@ -39,6 +39,7 @@
 
   @include font-regular;
   font-size: 18px;
+  text-align: left;
   border: solid 2px $grey-border;
   outline: none;
 
@@ -49,6 +50,7 @@
   &::placeholder {
     @include font-regular;
     font-size: 18px;
+    text-align: left;
   }
 }
 
@@ -113,10 +115,12 @@
   .contest-form__input-container {
     &--name {
       width: 435px;
+      margin-bottom: 64px;
     }
 
     &--contacts {
       width: 936px;
+      margin-bottom: 48px;
     }
 
     &--textarea {
