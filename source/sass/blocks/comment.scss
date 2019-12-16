@@ -20,6 +20,7 @@
 .comment__time {
   @include font-light;
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .comment__description {
@@ -70,6 +71,7 @@
   .comment--view-of-day {
     width: 940px;
     min-height: 96px;
-    padding-bottom: 27px;
+    padding-top: 28px;
+    padding-bottom: 24px;
   }
 }

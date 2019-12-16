@@ -11,3 +11,13 @@
     flex-direction: column;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .filter-icons {
+    margin: 0;
+  }
+
+  .filter-icons__item {
+    margin-bottom: 25px;
+  }
+}
