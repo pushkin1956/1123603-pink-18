@@ -12,13 +12,8 @@
   margin-bottom: 20px;
 }
 
-.photo-list__image--mobile {
+.photo-list__image {
   display: block;
-}
-
-.photo-list__image--tablet,
-.photo-list__image--desktop {
-  display: none;
 }
 
 .photo-list__item--view-of-day {
@@ -37,15 +32,6 @@
     margin-bottom: 54px;
   }
 
-  .photo-list__image--mobile,
-  .photo-list__image--desktop {
-    display: none;
-  }
-
-  .photo-list__image--tablet {
-    display: block;
-  }
-
   .photo-list__item--view-of-day {
     width: 620px;
   }
@@ -58,14 +44,6 @@
 
   .photo-list__item {
     margin-bottom: 50px;
-  }
-
-  .photo-list__image--tablet {
-    display: none;
-  }
-
-  .photo-list__image--desktop {
-    display: block;
   }
 
   .photo-list__item--view-of-day {
