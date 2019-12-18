@@ -1,0 +1,68 @@
+.scale {
+  position: absolute;
+  height: 10px;
+  padding-top: 8px;
+}
+
+.scale__bar {
+  width: 240px;
+  height: 2px;
+  background-color: $black;
+}
+
+.scale__toggle {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 18px;
+  height: 19px;
+  border: solid 2px $pink;
+  border-radius: 50%;
+  background-color: $light-grey;
+
+  &:active {
+    background-color: $pink;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .scale {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .scale__bar {
+    width: 202px;
+  }
+
+  .scale__toggle--fill {
+    left: 10%;
+  }
+
+  .scale__toggle--contrast {
+    left: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .scale {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .scale__bar {
+    width: 288px;
+  }
+
+  .scale__toggle--crop {
+    left: 20%;
+  }
+
+  .scale__toggle--fill {
+    left: 80%;
+  }
+
+  .scale__toggle--contrast {
+    left: 60%;
+  }
+}
