@@ -12,16 +12,27 @@
   margin-bottom: 20px;
 }
 
-.photo-list__image {
-  display: block;
-}
-
 .photo-list__item--view-of-day {
+  position: relative;
   align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 36px;
+    background-color: $pink;
+  }
 }
 
 .photo-list__item--view-of-day img {
   position: relative;
+}
+
+.photo-list__image {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,6 +45,10 @@
 
   .photo-list__item--view-of-day {
     width: 620px;
+
+    &::after {
+      top: 57px;
+    }
   }
 }
 
@@ -48,5 +63,9 @@
 
   .photo-list__item--view-of-day {
     width: 940px;
+
+    &::after {
+      top: 54px;
+    }
   }
 }
