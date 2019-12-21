@@ -54,6 +54,14 @@
   }
 }
 
+.contest-form__input:hover {
+  border-color: $main-color;
+}
+
+.contest-form__input:focus {
+  border-color: $pink;
+}
+
 @media (min-width: $tablet-width) {
   .contest-form__item--name,
   .contest-form__item--bottom {
@@ -66,40 +74,32 @@
     position: relative;
   }
 
-  .contest-form__item--contacts::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 59px;
-    height: 59px;
-    background-color: $grey-border;
-  }
-
   .contest-form__item--phone::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 59px;
-    height: 59px;
+    top: 2px;
+    right: 2px;
+    width: 55px;
+    height: 55px;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-size: 20px 19px;
     background-position: center;
+    background-color: $grey-border;
   }
 
   .contest-form__item--email::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 59px;
-    height: 59px;
+    top: 2px;
+    right: 2px;
+    width: 55px;
+    height: 55px;
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-size: 18px 13px;
     background-position: center;
+    background-color: $grey-border;
   }
 
 
