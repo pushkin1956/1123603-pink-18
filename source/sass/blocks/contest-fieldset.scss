@@ -90,6 +90,20 @@
   background-color: $pink;
 }
 
+.contest-fieldset__checkbox:hover + label::before,
+.contest-fieldset__checkbox:checked:hover + label::before,
+.contest-fieldset__radio:hover + label::before,
+.contest-fieldset__radio:checked:hover + label::before {
+  border-color: $main-color;
+}
+
+.contest-fieldset__checkbox:active + label::before,
+.contest-fieldset__checkbox:checked:active + label::before,
+.contest-fieldset__radio:active + label::before,
+.contest-fieldset__radio:checked:active + label::before {
+  border-color: $pink;
+}
+
 @media (min-width: $tablet-width) {
   .contest-fieldset {
     padding-bottom: 50px;
