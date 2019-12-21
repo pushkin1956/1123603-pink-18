@@ -62,6 +62,47 @@
     align-items: center;
   }
 
+  .contest-form__item--contacts {
+    position: relative;
+  }
+
+  .contest-form__item--contacts::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 59px;
+    height: 59px;
+    background-color: $grey-border;
+  }
+
+  .contest-form__item--phone::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 59px;
+    height: 59px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    background-position: center;
+  }
+
+  .contest-form__item--email::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 59px;
+    height: 59px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 13px;
+    background-position: center;
+  }
+
+
   .contest-form__input-label {
     &--name {
       margin-right: 20px;

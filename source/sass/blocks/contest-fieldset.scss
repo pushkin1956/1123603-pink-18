@@ -35,6 +35,61 @@
   }
 }
 
+.contest-fieldset__checkbox,
+.contest-fieldset__radio {
+  display: none;
+}
+
+.contest-fieldset__item label {
+  position: relative;
+}
+
+.contest-fieldset__checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -50px;
+  width: 39px;
+  height: 39px;
+  border: solid 2px $grey-border;
+  background-color: $white;
+}
+
+.contest-fieldset__checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -50px;
+  width: 39px;
+  height: 39px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contest-fieldset__radio + label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -50px;
+  width: 41px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 2px $grey-border;
+  background-color: $white;
+}
+
+.contest-fieldset__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -37px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $pink;
+}
+
 @media (min-width: $tablet-width) {
   .contest-fieldset {
     padding-bottom: 50px;
