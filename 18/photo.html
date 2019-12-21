@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+    <base href="https://htmlacademy-adaptive.github.io/1123603-pink-18/18/">
+</head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-wrap">
+          <a class="logo">
+            <img class="logo__logo-image logo__logo-image--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink">
+            <img class="logo__logo-image logo__logo-image--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Приложение Pink">
+            <img class="logo logo__logo-image logo__logo-image--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Приложение Pink">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="main-background main-background--photo-page">
+        <div class="container">
+          <h1 class="page-main__heading page-main__heading--photo-page">Фотографии пользователей</h1>
+        </div>
+      </div>
+      <div class="container">
+        <p class="page-main__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <ul class="photo-list">
+          <li class="photo-list__item photo-list__item--view-of-day">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo-list__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото с висячего моста">
+            </picture>
+            <div class="photo-list__user-comment comment comment--view-of-day">
+              <div class="comment__wrapper comment__wrapper--view-of-day">
+                <cite class="comment__author">Анна</cite>
+                <small class="comment__time">(5 минут назад)</small>
+                <p class="comment__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              </div>
+              <p class="comment__likes comment__likes--view-of-day">Нравится: <span class="comment__likes-number">215</span></p>
+            </div>
+          </li>
+          <li class="photo-list__item">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="photo-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото автомобиля">
+            </picture>
+            <div class="photo-list__user-comment comment">
+              <div class="comment__wrapper">
+                <cite class="comment__author">Левон</cite>
+                <small class="comment__time">(5 часов назад)</small>
+                <p class="comment__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              </div>
+              <p class="comment__likes">Нравится: <span class="comment__likes-number">356</span></p>
+            </div>
+          </li>
+          <li class="photo-list__item">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="photo-list__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото барабанов">
+            </picture>
+            <div class="photo-list__user-comment comment">
+              <div class="comment__wrapper">
+                <cite class="comment__author">Антон</cite>
+                <small class="comment__time">(20 часов назад)</small>
+                <p class="comment__description">Соседи будут рады!</p>
+              </div>
+              <p class="comment__likes">Нравится: <span class="comment__likes-number">666</span></p>
+            </div>
+          </li>
+          <li class="photo-list__item">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="photo-list__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото неба сквозь окна">
+            </picture>
+            <div class="photo-list__user-comment comment">
+              <div class="comment__wrapper">
+                <cite class="comment__author">Борис</cite>
+                <small class="comment__time">(20 часов назад)</small>
+                <p class="comment__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              </div>
+              <p class="comment__likes">Нравится: <span class="comment__likes-number">215</span></p>
+            </div>
+          </li>
+          <li class="photo-list__item">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="photo-list__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото Кубанской бахчи">
+            </picture>
+            <div class="photo-list__user-comment comment">
+              <div class="comment__wrapper">
+                <cite class="comment__author">Сергей</cite>
+                <small class="comment__time">(25 часов назад)</small>
+                <p class="comment__description">Самая кубанская в мире!</p>
+              </div>
+              <p class="comment__likes">Нравится: <span class="comment__likes-number">4</span></p>
+            </div>
+          </li>
+          <li class="photo-list__item">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="photo-list__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото с вершины горы">
+            </picture>
+            <div class="photo-list__user-comment comment">
+              <div class="comment__wrapper">
+                <cite class="comment__author">Максим</cite>
+                <small class="comment__time">(40 часов назад)</small>
+                <p class="comment__description">Где снег-то?</p>
+              </div>
+              <p class="comment__likes">Нравится: <span class="comment__likes-number">150</span></p>
+            </div>
+          </li>
+          <li class="photo-list__item">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="photo-list__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото заката из иллюминатора самолета">
+            </picture>
+            <div class="photo-list__user-comment comment">
+              <div class="comment__wrapper">
+                <cite class="comment__author">Надежда</cite>
+                <small class="comment__time">(45 часов назад)</small>
+                <p class="comment__description">Всем GM и взаимные лайки!</p>
+              </div>
+              <p class="comment__likes">Нравится: <span class="comment__likes-number">2560</span></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <section class="photo-filter">
+        <div class="container">
+          <h2 class="visually-hidden">Редактор фотографий</h2>
+          <p class="photo-filter__heading">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+        <div class="photo-filter__background">
+          <div class="container photo-filter__wrapper">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="photo-filter__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Редактировать фото с приложением Pink очень просто">
+            </picture>
+            <div class="photo-filter__container">
+              <ul class="photo-filter__list filter-icons">
+                <li class="filter-icons__item filter-icons__item--crop">
+                  <button class="photo-filter__btn photo-filter__btn--edit button" type="button"><img src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезать фото"></button>
+                  <div class="photo-filter__scale photo-filter__scale--crop scale">
+                    <div class="photo-filter__bar scale__bar"></div>
+                    <div class="photo-filter__toggle scale__toggle scale__toggle--crop"></div>
+                  </div>
+                </li>
+                <li class="filter-icons__item filter-icons__item--fill">
+                  <button class="photo-filter__btn photo-filter__btn--edit button" type="button"><img src="img/icon-editor-fill.svg" width="48" height="43" alt="Залить фото"></button>
+                  <div class="photo-filter__scale photo-filter__scale--fill scale">
+                    <div class="photo-filter__bar scale__bar"></div>
+                    <div class="photo-filter__toggle scale__toggle scale__toggle--fill"></div>
+                  </div>
+                </li>
+                <li class="filter-icons__item filter-icons__item--contrast">
+                  <button class="photo-filter__btn photo-filter__btn--edit button" type="button"><img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Отрегулировать контрастность"></button>
+                  <div class="photo-filter__scale photo-filter__scale--contrast scale">
+                    <div class="photo-filter__bar scale__bar"></div>
+                    <div class="photo-filter__toggle scale__toggle scale__toggle--contrast"></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="photo-filter__post-buttons">
+                <button class="photo-filter__btn photo-filter__btn--post button" type="button">Запостить</button>
+                <button class="photo-filter__btn photo-filter__btn--cancel button" type="button">Отмена</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <a href="index.html" class="logo logo__footer">
+          <img class="logo__footer-image logo__footer-image--mobile" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Pink">
+          <img class="logo__footer-image logo__footer-image--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Приложение Pink">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/" target="blank"><div class="social__background social__background--twitter"><span class="visually-hidden">Мы в Twitter</span></div></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://facebook.com/" target="blank"><div class="social__background social__background--facebook"><span class="visually-hidden">Мы в Facebook</span></div></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://youtube.com/" target="blank"><div class="social__background social__background--youtube"><span class="visually-hidden">Мы в Youtube</span></div></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><div class="copyright__logo"><span class="visually-hidden">HTML Academy</span></div></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
