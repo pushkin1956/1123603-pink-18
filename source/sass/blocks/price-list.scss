@@ -37,6 +37,16 @@
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
   }
+
+  &::after {
+    content: "Хит";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 74px;
+    font-size: 10px;
+    transform: rotate(315deg);
+  }
 }
 
 .price-list__price {
@@ -56,18 +66,26 @@
 }
 
 .price-list__option--yes {
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-size: 31px 31px;
-  background-position: right 20px center;
+  width: 31px;
+  height: 21px;
+  margin: auto;
+  fill: #3dc644;
 }
 
-.price-list__option--no {
-  background-image: url("../img/icon-no.svg");
-  background-repeat: no-repeat;
-  background-size: 27px 26px;
-  background-position: right 20px center;
-}
+
+// .price-list__option--yes {
+//   background-image: url("../img/icon-yes.svg");
+//   background-repeat: no-repeat;
+//   background-size: 31px 31px;
+//   background-position: right 20px center;
+// }
+
+// .price-list__option--no {
+//   background-image: url("../img/icon-no.svg");
+//   background-repeat: no-repeat;
+//   background-size: 27px 26px;
+//   background-position: right 20px center;
+// }
 
 .price__toggles {
   margin: 0;
@@ -82,12 +100,18 @@
   .price-list__title {
     width: 25%;
     font-size: 16px;
-  }
 
-  .price-list__title::before {
-    width: 61px;
-    height: 61px;
-    background-image: url("../img/bg-hit-tablet.svg");
+    &::before {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/bg-hit-tablet.svg");
+    }
+
+    &::after {
+      top: 5px;
+      left: -10px;
+      width: 61px;
+    }
   }
 
   .price-list__price {
@@ -98,10 +122,6 @@
     padding-left: 15px;
     padding-top: 16px;
     padding-bottom: 14px;
-  }
-
-  .price-list__option--yes,
-  .price-list__option--no {
     background-position: center;
   }
 
@@ -131,12 +151,22 @@
 
   .price-list__title {
     font-size: 18px;
-  }
 
-  .price-list__title::before {
-    width: 74px;
-    height: 73px;
-    background-image: url("../img/bg-hit.svg");
+    &::before {
+      width: 74px;
+      height: 73px;
+      background-image: url("../img/bg-hit.svg");
+    }
+
+    &::after {
+      content: "Хит";
+      position: absolute;
+      top: 10px;
+      left: -10px;
+      width: 74px;
+      font-size: 10px;
+      transform: rotate(315deg);
+    }
   }
 
   .price-list__price {
