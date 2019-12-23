@@ -17,12 +17,19 @@
   align-items: center;
 
   &::after {
-    content: "";
+    content: "Панорама дня";
     position: absolute;
     top: 0;
     right: 0;
     width: 140px;
     height: 36px;
+    padding-top: 3px;
+
+    @include font-regular;
+    font-weight: 700;
+    font-size: 12px;
+    color: $white;
+    text-transform: uppercase;
     background-color: $pink;
   }
 }
