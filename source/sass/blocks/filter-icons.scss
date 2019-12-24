@@ -11,6 +11,19 @@
   position: relative;
 }
 
+.filter-icons__img {
+  fill: $pink;
+
+  &:hover {
+    fill: $main-color;
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .filter-icons {
     flex-direction: column;

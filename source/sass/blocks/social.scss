@@ -14,6 +14,14 @@
   border: solid 3px $main-light;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    border-color: $main-color;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .social__background--twitter,

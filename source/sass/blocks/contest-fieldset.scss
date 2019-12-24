@@ -40,6 +40,7 @@
   display: none;
 }
 
+.contest-fieldset__item,
 .contest-fieldset__item label {
   position: relative;
 }
@@ -55,16 +56,16 @@
   background-color: $white;
 }
 
-.contest-fieldset__checkbox:checked + label::before {
-  content: "";
+.contest-fieldset__checkbox--checked-icon {
+  display: none;
   position: absolute;
-  top: -5px;
-  left: -50px;
-  width: 39px;
-  height: 39px;
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  top: 10px;
+  left: -42px;
+  fill: $pink;
+}
+
+.contest-fieldset__checkbox:checked ~ .contest-fieldset__checkbox--checked-icon {
+  display: block;
 }
 
 .contest-fieldset__radio + label::before {
