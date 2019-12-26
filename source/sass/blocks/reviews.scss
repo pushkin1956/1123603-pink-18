@@ -50,6 +50,22 @@
 @media (min-width: $desktop-width) {
   .reviews {
     margin-top: 200px;
+    margin-bottom: 105px;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+  }
+
+  .reviews__wrapper::before {
+    content: "";
+    position: absolute;
+    top: -116px;
+    left: 50%;
+    width: 79px;
+    height: 65px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
   }
 
   .reviews__author-name {

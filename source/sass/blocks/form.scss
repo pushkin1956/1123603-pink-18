@@ -36,6 +36,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form__br {
+    display: none;
+  }
+
   .form__heading {
     width: 490px;
     font-size: 18px;

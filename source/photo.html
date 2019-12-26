@@ -10,10 +10,10 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrap">
-          <a class="logo">
-            <img class="logo__logo-image logo__logo-image--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink">
-            <img class="logo__logo-image logo__logo-image--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Приложение Pink">
-            <img class="logo logo__logo-image logo__logo-image--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Приложение Pink">
+          <a href="index.html" class="logo">
+            <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-mobile"></use></svg>
+            <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-tablet"></use></svg>
+            <svg class="logo logo__logo-image logo__logo-image--desktop" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-desktop"></use></svg>
           </a>
         </div>
         <nav class="main-nav main-nav--closed">
@@ -47,6 +47,9 @@
         <ul class="photo-list">
           <li class="photo-list__item photo-list__item--view-of-day">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото с висячего моста">
@@ -62,6 +65,9 @@
           </li>
           <li class="photo-list__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото автомобиля">
@@ -77,6 +83,9 @@
           </li>
           <li class="photo-list__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото барабанов">
@@ -92,6 +101,9 @@
           </li>
           <li class="photo-list__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото неба сквозь окна">
@@ -107,6 +119,9 @@
           </li>
           <li class="photo-list__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.jpg.webp 1x, img/photo-fair-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото Кубанской бахчи">
@@ -122,6 +137,9 @@
           </li>
           <li class="photo-list__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото с вершины горы">
@@ -137,6 +155,9 @@
           </li>
           <li class="photo-list__item">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото заката из иллюминатора самолета">
@@ -160,6 +181,9 @@
         <div class="photo-filter__background">
           <div class="container photo-filter__wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
               <img class="photo-filter__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Редактировать фото с приложением Pink очень просто">
@@ -167,13 +191,31 @@
             <div class="photo-filter__container">
               <ul class="photo-filter__list filter-icons">
                 <li class="filter-icons__item filter-icons__item--crop">
-                  <button class="photo-filter__btn photo-filter__btn--edit button" type="button"><img src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезать фото"></button>
+                  <button class="photo-filter__btn photo-filter__btn--edit button" type="button">
+                    <svg class="filter-icons__img filter-icons__img--crop" width="44" height="44" alt="Обрезать фото"><use xlink:href="sprite.svg#icon-crop"></use></svg>
+                  </button>
+                  <div class="photo-filter__scale photo-filter__scale--crop scale">
+                    <div class="photo-filter__bar scale__bar"></div>
+                    <div class="photo-filter__toggle scale__toggle scale__toggle--crop"></div>
+                  </div>
                 </li>
                 <li class="filter-icons__item filter-icons__item--fill">
-                  <button class="photo-filter__btn photo-filter__btn--edit button" type="button"><img src="img/icon-editor-fill.svg" width="48" height="43" alt="Залить фото"></button>
+                  <button class="photo-filter__btn photo-filter__btn--edit button" type="button">
+                    <svg class="filter-icons__img filter-icons__img--fill" width="48" height="43" alt="Залить фото"><use xlink:href="sprite.svg#icon-fill"></use></svg>
+                  </button>
+                  <div class="photo-filter__scale photo-filter__scale--fill scale">
+                    <div class="photo-filter__bar scale__bar"></div>
+                    <div class="photo-filter__toggle scale__toggle scale__toggle--fill"></div>
+                  </div>
                 </li>
                 <li class="filter-icons__item filter-icons__item--contrast">
-                  <button class="photo-filter__btn photo-filter__btn--edit button" type="button"><img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Отрегулировать контрастность"></button>
+                  <button class="photo-filter__btn photo-filter__btn--edit button" type="button">
+                    <svg class="filter-icons__img filter-icons__img--contrast" width="32" height="32" alt="Отрегулировать контрастность"><use xlink:href="sprite.svg#icon-contrast"></use></svg>
+                  </button>
+                  <div class="photo-filter__scale photo-filter__scale--contrast scale">
+                    <div class="photo-filter__bar scale__bar"></div>
+                    <div class="photo-filter__toggle scale__toggle scale__toggle--contrast"></div>
+                  </div>
                 </li>
               </ul>
               <div class="photo-filter__post-buttons">
@@ -189,8 +231,8 @@
     <footer class="page-footer">
       <div class="container page-footer__container">
         <a href="index.html" class="logo logo__footer">
-          <img class="logo__footer-image logo__footer-image--mobile" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Приложение Pink">
-          <img class="logo__footer-image logo__footer-image--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Приложение Pink">
+          <svg class="logo__footer-image logo__footer-image--mobile" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-mobilefooter"></use></svg>
+          <svg class="logo__footer-image logo__footer-image--desktop" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-desktopfooter"></use></svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -207,7 +249,10 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><div class="copyright__logo"><span class="visually-hidden">HTML Academy</span></div></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__logo" width="27" height="34" alt="HTML Academy"><use xlink:href="sprite.svg#logo-htmlacademy"></use></svg>
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
         </div>
       </div>
     </footer>

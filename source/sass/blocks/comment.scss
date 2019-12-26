@@ -34,10 +34,14 @@
 .comment__likes {
   @include font-regular;
   margin: 0;
-  margin-left: 33px;
+  padding-left: 33px;
   font-size: 12px;
   text-align: left;
   color: $pink;
+  background-image: url("../img/icon-heart.svg");
+  background-size: 13px 12px;
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,14 +60,18 @@
   }
 
   .comment__likes {
-    margin: 0;
+    padding: 0;
+    padding-right: 33px;
     margin-top: auto;
+    background-position: right center;
   }
 
   .comment__likes--view-of-day {
     position: absolute;
-    right: 59px;
+    right: 30px;
     top: 25px;
+    min-width: 118px;
+    padding-right: 30px;
   }
 }
 

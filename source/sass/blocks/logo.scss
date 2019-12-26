@@ -1,5 +1,19 @@
 .logo {
   display: block;
+  cursor: pointer;
+}
+
+.logo__logo-image {
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
 }
 
 .logo__logo-image--tablet,
@@ -11,6 +25,20 @@
 .logo__footer {
   margin: auto;
   margin-bottom: 41px;
+}
+
+.logo__footer-image {
+  fill: $main-color;
+
+  &:hover {
+    fill: $pink;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $main-color;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

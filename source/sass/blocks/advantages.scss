@@ -44,12 +44,22 @@
 }
 
 .advantages__background {
+  position: relative;
   padding-top: 80px;
   background-color: $light-grey;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 101% auto;
   background-position: 50% 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: $white;
+  }
 }
 
 .advantages__image {
@@ -64,6 +74,10 @@
 @media (min-width: $tablet-width) {
   .advantages__background {
     padding-top: 0;
+
+    &::after {
+      display: none;
+    }
   }
 
   .advantages__heading {

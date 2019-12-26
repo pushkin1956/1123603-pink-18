@@ -7,9 +7,9 @@
   text-decoration: none;
 
   @include font-bold;
-  // line-height: 18px;
   color: $white;
   background: none;
   border: solid 3px $white;
   border-radius: 50px;
+  cursor: pointer;
 }
